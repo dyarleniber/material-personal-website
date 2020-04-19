@@ -1,0 +1,178 @@
+.container {
+  text-align: center;
+}
+
+.field {
+  margin-top: 15px;
+  margin-bottom: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+img {
+  width: 180px;
+  height: 180px;
+  
+  padding: 20px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(237, 237, 237);
+  border-image: initial;
+  border-radius: 50%;
+
+
+
+
+}
+
+
+.title {
+
+  font-size: 22px;
+  font-weight: 400;
+  
+    color: rgb(41, 41, 41);
+    text-align: center;
+}
+
+.description {
+
+
+  color: rgb(41, 41, 41);
+    font-size: 15px;
+    line-height: 2;
+    text-align: center;
+}
+
+.email {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+
+.iAKCcG {
+  display: inline-flex;
+}
+
+ul, ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.cgcREi {
+  position: relative;
+  margin-right: 20px;
+  list-style: none;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.cgcREi a {
+  color: rgb(41, 41, 41);
+  font-size: 22px;
+  display: block;
+  padding: 0.2em;
+}
+
+a {
+  box-shadow: none;
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.glLIUb {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  pointer-events: none;
+  color: rgb(51, 51, 51);
+  font-size: 13px;
+  bottom: 90%;
+  left: 50%;
+  opacity: 0;
+  white-space: nowrap;
+  visibility: hidden;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 15px;
+  transform: translate3d(-50%, 0px, 0px);
+  padding: 0.4rem 0.8rem;
+  border-radius: 3px;
+  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+}
+
+.glLIUb::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 6px solid rgb(255, 255, 255);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+
+
+
+
+.links {
+  display: inline-block;
+}
+
+.links > a {
+  float: left;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+
+
+
+
+
+
+.socialicon {
+  display: block;
+  width: 26px;
+}
+
+.socialicon:hover {
+  -webkit-filter: invert(.75);
+  filter: invert(.75);
+}
+
+.socialicon-github:before {
+  content: url("{{ asset('icons/github.svg') }}");
+}
+
+.socialicon-linkedin:before {
+  content: url("{{ asset('icons/linkedin.svg') }}");
+}
+
+.socialicon-instagram:before {
+  content: url("{{ asset('icons/instagram.svg') }}");
+}
+
+.socialicon-dev:before {
+  content: url("{{ asset('icons/dev.svg') }}");
+}
