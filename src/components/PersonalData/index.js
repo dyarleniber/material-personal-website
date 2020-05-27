@@ -9,7 +9,13 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import useStyles from "./styles";
 
-const PersonalData = ({ name, description, profilePicture, socialMedias }) => {
+const PersonalData = ({
+  name,
+  description,
+  email,
+  profilePicture,
+  socialMedias,
+}) => {
   const classes = useStyles();
 
   return (
@@ -29,13 +35,23 @@ const PersonalData = ({ name, description, profilePicture, socialMedias }) => {
         <Grid item xs={12}>
           <Grid container justify="center" spacing={1}>
             <Grid item>
-              <IconButton aria-label="email">
+              <IconButton
+                aria-label="email"
+                key="Email"
+                component="a"
+                href={`mailto:${email}`}
+              >
                 <FontAwesomeIcon icon={faEnvelope} />
               </IconButton>
             </Grid>
             {socialMedias.map((socialMedia) => (
               <Grid item key={socialMedia.name}>
-                <IconButton aria-label={socialMedia.name}>
+                <IconButton
+                  aria-label={socialMedia.name}
+                  target="_blank"
+                  component="a"
+                  href={socialMedia.url}
+                >
                   <FontAwesomeIcon icon={["fab", socialMedia.name]} />
                 </IconButton>
               </Grid>
@@ -50,10 +66,12 @@ const PersonalData = ({ name, description, profilePicture, socialMedias }) => {
 PersonalData.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
   profilePicture: PropTypes.string.isRequired,
   socialMedias: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
     })
   ).isRequired,
 };

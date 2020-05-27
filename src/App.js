@@ -20,15 +20,19 @@ const data = {
   socialMedias: [
     {
       name: "github",
+      url: "https://github.com/dyarleniber",
     },
     {
       name: "linkedin",
+      url: "https://ie.linkedin.com/in/dyarleniber",
     },
     {
       name: "instagram",
+      url: "https://www.instagram.com/dyarleniber/",
     },
     {
       name: "dev",
+      url: "https://dev.to/dyarleniber",
     },
   ],
 };
