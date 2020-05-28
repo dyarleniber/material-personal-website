@@ -17,11 +17,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Container from "@material-ui/core/Container";
 import { Link as RouterLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faProjectDiagram,
-  faRss,
-} from "@fortawesome/free-solid-svg-icons";
+import { faHome, faProjectDiagram } from "@fortawesome/free-solid-svg-icons";
 
 import useStyles from "./styles";
 
@@ -114,11 +110,6 @@ const MenuBar = ({ children }) => {
             to="/portfolio"
             primary="Portfolio"
             icon={<FontAwesomeIcon icon={faProjectDiagram} />}
-          />
-          <ListItemLink
-            to="/blog"
-            primary="Blog"
-            icon={<FontAwesomeIcon icon={faRss} />}
           />
         </List>
       </Drawer>

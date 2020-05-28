@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+
 import Grid from "@material-ui/core/Grid";
 import Avatar from "@material-ui/core/Avatar";
 import Typography from "@material-ui/core/Typography";
@@ -8,15 +8,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import useStyles from "./styles";
+import { personalData } from "../../config/dataApi";
 
-const PersonalData = ({
-  name,
-  description,
-  email,
-  profilePicture,
-  socialMedias,
-}) => {
+const PersonalData = () => {
   const classes = useStyles();
+
+  const {
+    name,
+    description,
+    email,
+    profilePicture,
+    socialMedias,
+  } = personalData;
 
   return (
     <div className={classes.paper}>
@@ -61,19 +64,6 @@ const PersonalData = ({
       </Grid>
     </div>
   );
-};
-
-PersonalData.propTypes = {
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired,
-  profilePicture: PropTypes.string.isRequired,
-  socialMedias: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
-    })
-  ).isRequired,
 };
 
 export default PersonalData;

@@ -3,10 +3,10 @@ import React from "react";
 import VideoBackground from "../../components/VideoBackground";
 import PersonalData from "../../components/PersonalData";
 
-const Home = (props) => {
+const Home = () => {
   return (
     <VideoBackground>
-      <PersonalData {...props} />
+      <PersonalData />
     </VideoBackground>
   );
 };

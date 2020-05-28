@@ -1,6 +1,31 @@
+import defaultprofilepic from "../assets/images/defaultprofilepic.jfif";
 import * as portfolioTypes from "../components/Cards/constants";
 
-export const personalData = {};
+export const personalData = {
+  name: "Dyarlen Iber",
+  description:
+    "Full-Stack Developer | PHP | Laravel | MySQL | JavaScript | Node.js | MongoDB | React | Go",
+  email: "dyarlen1@gmail.com",
+  profilePicture: defaultprofilepic,
+  socialMedias: [
+    {
+      name: "github",
+      url: "https://github.com/dyarleniber",
+    },
+    {
+      name: "linkedin",
+      url: "https://ie.linkedin.com/in/dyarleniber",
+    },
+    {
+      name: "instagram",
+      url: "https://www.instagram.com/dyarleniber/",
+    },
+    {
+      name: "dev",
+      url: "https://dev.to/dyarleniber",
+    },
+  ],
+};
 
 const frontEndPortfolio = [
   {
