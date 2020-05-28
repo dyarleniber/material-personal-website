@@ -129,9 +129,7 @@ const MenuBar = ({ children }) => {
       >
         <div className={classes.drawerHeader} />
 
-        <Container component="main" maxWidth="xs">
-          {children}
-        </Container>
+        <Container component="main">{children}</Container>
       </main>
     </div>
   );
