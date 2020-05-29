@@ -27,6 +27,19 @@ export const personalData = {
   ],
 };
 
+export const menuItems = [
+  {
+    to: "/",
+    primary: "Home",
+    icon: "home",
+  },
+  {
+    to: "/portfolio",
+    primary: "Portfolio",
+    icon: "project-diagram",
+  },
+];
+
 const frontEndPortfolio = [
   {
     id: 101,

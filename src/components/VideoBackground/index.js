@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 
 import useStyles from "./styles";
 import videPoster240 from "../../assets/images/code240.jpg";
-import videoSource240 from "../../assets/videos/code240.mp4";
 import videPoster320 from "../../assets/images/code320.jpg";
-import videoSource320 from "../../assets/videos/code320.mp4";
 import videPoster480 from "../../assets/images/code480.jpg";
-import videoSource480 from "../../assets/videos/code480.mp4";
 import videPoster720 from "../../assets/images/code720.jpg";
+import videoSource240 from "../../assets/videos/code240.mp4";
+import videoSource320 from "../../assets/videos/code320.mp4";
+import videoSource480 from "../../assets/videos/code480.mp4";
 import videoSource720 from "../../assets/videos/code720.mp4";
 
 const VideoBackground = ({ children }) => {

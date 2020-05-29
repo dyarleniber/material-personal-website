@@ -1,56 +1,31 @@
-import React, { useState, useMemo, forwardRef } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
+import { useLocation } from "react-router-dom";
 import { useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
 import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
 import Container from "@material-ui/core/Container";
-import { Link as RouterLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faProjectDiagram } from "@fortawesome/free-solid-svg-icons";
 
+import { menuItems } from "../../config/dataApi";
 import useStyles from "./styles";
-
-function ListItemLink(props) {
-  const { icon, primary, to } = props;
-
-  const renderLink = useMemo(
-    () =>
-      forwardRef(function renderLink(itemProps, ref) {
-        return <RouterLink to={to} ref={ref} {...itemProps} />;
-      }),
-    [to]
-  );
-
-  return (
-    <li>
-      <ListItem button component={renderLink}>
-        {icon ? <ListItemIcon>{icon}</ListItemIcon> : null}
-        <ListItemText primary={primary} />
-      </ListItem>
-    </li>
-  );
-}
-
-ListItemLink.propTypes = {
-  icon: PropTypes.element,
-  primary: PropTypes.string.isRequired,
-  to: PropTypes.string.isRequired,
-};
+import ListItemLink from "../ListItemLink";
 
 const MenuBar = ({ children }) => {
   const classes = useStyles();
   const theme = useTheme();
+
+  let location = useLocation();
+
   const [open, setOpen] = useState(false);
 
   const handleDrawerOpen = () => {
@@ -79,6 +54,9 @@ const MenuBar = ({ children }) => {
           >
             <MenuIcon />
           </IconButton>
+          <Typography variant="overline" display="block">
+            {location.pathname.replace(/[^a-z0-9]/gi, "")}
+          </Typography>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -101,16 +79,15 @@ const MenuBar = ({ children }) => {
         </div>
         <Divider />
         <List>
-          <ListItemLink
-            to="/"
-            primary="Home"
-            icon={<FontAwesomeIcon icon={faHome} />}
-          />
-          <ListItemLink
-            to="/portfolio"
-            primary="Portfolio"
-            icon={<FontAwesomeIcon icon={faProjectDiagram} />}
-          />
+          {menuItems.map((menuItem) => (
+            <ListItemLink
+              key={menuItem.to}
+              to={menuItem.to}
+              primary={menuItem.primary}
+              icon={<FontAwesomeIcon icon={menuItem.icon} />}
+              handleClick={handleDrawerClose}
+            />
+          ))}
         </List>
       </Drawer>
       <main
@@ -119,7 +96,6 @@ const MenuBar = ({ children }) => {
         })}
       >
         <div className={classes.drawerHeader} />
-
         <Container component="main">{children}</Container>
       </main>
     </div>

@@ -1,5 +1,4 @@
 import React from "react";
-
 import Grid from "@material-ui/core/Grid";
 import Avatar from "@material-ui/core/Avatar";
 import Typography from "@material-ui/core/Typography";
@@ -7,8 +6,9 @@ import IconButton from "@material-ui/core/IconButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-import useStyles from "./styles";
 import { personalData } from "../../config/dataApi";
+import useStyles from "./styles";
+import ButtonLink from "../ButtonLink";
 
 const PersonalData = () => {
   const classes = useStyles();
@@ -34,13 +34,15 @@ const PersonalData = () => {
       <Typography variant="body2" gutterBottom>
         {description}
       </Typography>
+      <Typography variant="overline" display="block" gutterBottom>
+        {email}
+      </Typography>
       <Grid container className={classes.socialmedia} spacing={1}>
         <Grid item xs={12}>
           <Grid container justify="center" spacing={1}>
             <Grid item>
               <IconButton
                 aria-label="email"
-                key="Email"
                 component="a"
                 href={`mailto:${email}`}
               >
@@ -60,6 +62,13 @@ const PersonalData = () => {
               </Grid>
             ))}
           </Grid>
+        </Grid>
+        <Grid item xs={12}>
+          <ButtonLink
+            variant="outlined"
+            to={"/portfolio"}
+            primary={"See my portfolio"}
+          />
         </Grid>
       </Grid>
     </div>
