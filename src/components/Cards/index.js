@@ -8,13 +8,15 @@ import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import Avatar from "@material-ui/core/Avatar";
 import Typography from "@material-ui/core/Typography";
+import Chip from "@material-ui/core/Chip";
+import Grid from "@material-ui/core/Grid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop, faCode } from "@fortawesome/free-solid-svg-icons";
 
 import useStyles from "./styles";
 import * as types from "./constants";
 
-const Cards = ({ name, description, type, homepage, github }) => {
+const Cards = ({ name, description, type, technologies, homepage, github }) => {
   const classes = useStyles();
 
   return (
@@ -33,7 +35,7 @@ const Cards = ({ name, description, type, homepage, github }) => {
           </Typography>
         </CardMedia>
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h6">
             {name}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
@@ -41,6 +43,15 @@ const Cards = ({ name, description, type, homepage, github }) => {
           </Typography>
         </CardContent>
       </CardActionArea>
+      <CardActions>
+        <Grid container justify="flex-start" spacing={1}>
+          {technologies.map((technologie) => (
+            <Grid item key={technologie}>
+              <Chip label={technologie} color="primary" />
+            </Grid>
+          ))}
+        </Grid>
+      </CardActions>
       <CardActions>
         {homepage && (
           <Button size="small" color="primary" target="_blank" href={homepage}>
@@ -61,6 +72,7 @@ Cards.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string,
   type: PropTypes.oneOf([types.FRONTEND_TYPE, types.BACKEND_TYPE]).isRequired,
+  technologies: PropTypes.arrayOf(PropTypes.string),
   homepage: PropTypes.string,
   github: PropTypes.string,
 };

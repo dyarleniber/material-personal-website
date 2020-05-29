@@ -2,13 +2,12 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 345,
-    height: 406,
+    width: 300,
   },
   media: {
     textAlign: "center",
     textTransform: "uppercase",
-    height: 140,
+    height: 120,
   },
   avatar: {
     width: "60px",
