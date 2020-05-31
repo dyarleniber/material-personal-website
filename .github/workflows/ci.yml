@@ -19,7 +19,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
@@ -43,4 +43,4 @@ jobs:
         github_token: ${{ secrets.ACTIONS_PERSONAL_ACCESS_TOKEN }}
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-        repository: ${{ env.GITHUB_REPOSITORY }}
+        repository: ${{ github.repository }}
