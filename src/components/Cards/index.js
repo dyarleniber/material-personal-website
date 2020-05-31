@@ -45,11 +45,12 @@ const Cards = ({ name, description, type, technologies, homepage, github }) => {
       </CardActionArea>
       <CardActions>
         <Grid container justify="flex-start" spacing={1}>
-          {technologies.map((technologie) => (
-            <Grid item key={technologie}>
-              <Chip label={technologie} color="primary" />
-            </Grid>
-          ))}
+          {technologies &&
+            technologies.map((technologie) => (
+              <Grid item key={technologie}>
+                <Chip label={technologie} color="primary" />
+              </Grid>
+            ))}
         </Grid>
       </CardActions>
       <CardActions>
