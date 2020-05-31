@@ -19,7 +19,7 @@ jobs:
       github_token: ${{ secrets.GITHUB_TOKEN }}
       user_name: 'github-actions[bot]'
       user_email: 'github-actions[bot]@users.noreply.github.com'
-      repository: $GITHUB_REPOSITORY
+      repository: ${{ env.GITHUB_REPOSITORY }}
 
     steps:
     - name: Checkout repository
@@ -34,7 +34,7 @@ jobs:
       run: npm install
 
     - name: Check tests
-      run: npm test -- --coverage --watchAll=false
+      run: npm test --watchAll=false
 
     - name: Build
       run: npm run build
