@@ -1,3 +1,123 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing 1`] = `ShallowWrapper {}`;
+exports[`renders without crashing 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(AppBar))
+    className="makeStyles-appBar-2"
+    position="fixed"
+  >
+    <WithStyles(ForwardRef(Toolbar))>
+      <WithStyles(ForwardRef(IconButton))
+        aria-label="open drawer"
+        className="makeStyles-menuButton-4"
+        color="inherit"
+        edge="start"
+        id="open-menubar-button"
+        onClick={[Function]}
+      >
+        <MenuIcon />
+      </WithStyles(ForwardRef(IconButton))>
+      <WithStyles(ForwardRef(Typography))
+        display="block"
+        variant="overline"
+      />
+    </WithStyles(ForwardRef(Toolbar))>
+  </WithStyles(ForwardRef(AppBar))>
+  <WithStyles(ForwardRef(Drawer))
+    anchor="left"
+    className="makeStyles-drawer-6"
+    classes={
+      Object {
+        "paper": "makeStyles-drawerPaper-7",
+      }
+    }
+    id="menubar-drawer"
+    open={false}
+    variant="persistent"
+  >
+    <div
+      className="makeStyles-drawerHeader-8"
+    >
+      <WithStyles(ForwardRef(IconButton))
+        id="close-menubar-button"
+        onClick={[Function]}
+      >
+        <ChevronLeftIcon />
+      </WithStyles(ForwardRef(IconButton))>
+    </div>
+    <WithStyles(ForwardRef(Divider)) />
+    <WithStyles(ForwardRef(List))>
+      <ListItemLink
+        handleClick={[Function]}
+        icon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon="home"
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
+        key="/"
+        primary="Home"
+        to="/"
+      />
+      <ListItemLink
+        handleClick={[Function]}
+        icon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon="project-diagram"
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
+        key="/portfolio"
+        primary="Portfolio"
+        to="/portfolio"
+      />
+    </WithStyles(ForwardRef(List))>
+  </WithStyles(ForwardRef(Drawer))>
+  <main
+    className="makeStyles-content-9"
+  >
+    <div
+      className="makeStyles-drawerHeader-8"
+    />
+    <WithStyles(ForwardRef(Container))
+      component="main"
+    >
+      <div
+        className="unique"
+      />
+    </WithStyles(ForwardRef(Container))>
+  </main>
+</div>
+`;

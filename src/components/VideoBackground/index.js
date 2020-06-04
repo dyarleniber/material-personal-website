@@ -40,7 +40,6 @@ const VideoBackground = ({ children }) => {
       <video
         playsInline
         autoPlay
-        muted
         loop
         poster={videPoster}
         className={classes.video}

@@ -1,7 +1,289 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing 1`] = `ShallowWrapper {}`;
+exports[`renders without crashing 1`] = `
+<WithStyles(ForwardRef(Card))
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(CardActionArea))>
+    <WithStyles(ForwardRef(CardMedia))
+      className="makeStyles-media-2"
+    >
+      <WithStyles(ForwardRef(Avatar))
+        className="makeStyles-avatar-3"
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                576,
+                512,
+                Array [],
+                "f108",
+                "M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z",
+              ],
+              "iconName": "desktop",
+              "prefix": "fas",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      </WithStyles(ForwardRef(Avatar))>
+      <WithStyles(ForwardRef(Typography))
+        component="h6"
+        gutterBottom={true}
+        variant="overline"
+      >
+        FRONT-END
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(CardMedia))>
+    <WithStyles(ForwardRef(CardContent))>
+      <WithStyles(ForwardRef(Typography))
+        gutterBottom={true}
+        variant="h6"
+      >
+        test 1
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Typography))
+        color="textSecondary"
+        component="p"
+        variant="body2"
+      >
+        test 1 description
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(CardContent))>
+  </WithStyles(ForwardRef(CardActionArea))>
+  <WithStyles(ForwardRef(CardActions))>
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      justify="flex-start"
+      spacing={1}
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        key="technologie 1"
+      >
+        <WithStyles(ForwardRef(Chip))
+          color="primary"
+          label="technologie 1"
+        />
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(CardActions))>
+  <WithStyles(ForwardRef(CardActions))>
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      href="homepage"
+      size="small"
+      target="_blank"
+    >
+      Homepage
+    </WithStyles(ForwardRef(Button))>
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      href="github"
+      size="small"
+      target="_blank"
+    >
+      Source code
+    </WithStyles(ForwardRef(Button))>
+  </WithStyles(ForwardRef(CardActions))>
+</WithStyles(ForwardRef(Card))>
+`;
 
-exports[`renders without crashing 2`] = `ShallowWrapper {}`;
+exports[`renders without crashing 2`] = `
+<WithStyles(ForwardRef(Card))
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(CardActionArea))>
+    <WithStyles(ForwardRef(CardMedia))
+      className="makeStyles-media-2"
+    >
+      <WithStyles(ForwardRef(Avatar))
+        className="makeStyles-avatar-3"
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                640,
+                512,
+                Array [],
+                "f121",
+                "M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z",
+              ],
+              "iconName": "code",
+              "prefix": "fas",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      </WithStyles(ForwardRef(Avatar))>
+      <WithStyles(ForwardRef(Typography))
+        component="h6"
+        gutterBottom={true}
+        variant="overline"
+      >
+        BACK-END
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(CardMedia))>
+    <WithStyles(ForwardRef(CardContent))>
+      <WithStyles(ForwardRef(Typography))
+        gutterBottom={true}
+        variant="h6"
+      >
+        test 2
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Typography))
+        color="textSecondary"
+        component="p"
+        variant="body2"
+      >
+        test 2 description
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(CardContent))>
+  </WithStyles(ForwardRef(CardActionArea))>
+  <WithStyles(ForwardRef(CardActions))>
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      justify="flex-start"
+      spacing={1}
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        key="technologie 1"
+      >
+        <WithStyles(ForwardRef(Chip))
+          color="primary"
+          label="technologie 1"
+        />
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(CardActions))>
+  <WithStyles(ForwardRef(CardActions))>
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      href="homepage"
+      size="small"
+      target="_blank"
+    >
+      Homepage
+    </WithStyles(ForwardRef(Button))>
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      href="github"
+      size="small"
+      target="_blank"
+    >
+      Source code
+    </WithStyles(ForwardRef(Button))>
+  </WithStyles(ForwardRef(CardActions))>
+</WithStyles(ForwardRef(Card))>
+`;
 
-exports[`renders without crashing 3`] = `ShallowWrapper {}`;
+exports[`renders without crashing 3`] = `
+<WithStyles(ForwardRef(Card))
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(CardActionArea))>
+    <WithStyles(ForwardRef(CardMedia))
+      className="makeStyles-media-2"
+    >
+      <WithStyles(ForwardRef(Avatar))
+        className="makeStyles-avatar-3"
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                576,
+                512,
+                Array [],
+                "f108",
+                "M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z",
+              ],
+              "iconName": "desktop",
+              "prefix": "fas",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      </WithStyles(ForwardRef(Avatar))>
+      <WithStyles(ForwardRef(Typography))
+        component="h6"
+        gutterBottom={true}
+        variant="overline"
+      >
+        FRONT-END
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(CardMedia))>
+    <WithStyles(ForwardRef(CardContent))>
+      <WithStyles(ForwardRef(Typography))
+        gutterBottom={true}
+        variant="h6"
+      >
+        test 3
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Typography))
+        color="textSecondary"
+        component="p"
+        variant="body2"
+      >
+        test 3 description
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(CardContent))>
+  </WithStyles(ForwardRef(CardActionArea))>
+  <WithStyles(ForwardRef(CardActions))>
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      justify="flex-start"
+      spacing={1}
+    />
+  </WithStyles(ForwardRef(CardActions))>
+  <WithStyles(ForwardRef(CardActions)) />
+</WithStyles(ForwardRef(Card))>
+`;

@@ -1,5 +1,79 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing 1`] = `ShallowWrapper {}`;
+exports[`renders without crashing 1`] = `
+<ForwardRef(Drawer)
+  classes={
+    Object {
+      "docked": "MuiDrawer-docked",
+      "modal": "MuiDrawer-modal",
+      "paper": "MuiDrawer-paper",
+      "paperAnchorBottom": "MuiDrawer-paperAnchorBottom",
+      "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom",
+      "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft",
+      "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight",
+      "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop",
+      "paperAnchorLeft": "MuiDrawer-paperAnchorLeft",
+      "paperAnchorRight": "MuiDrawer-paperAnchorRight",
+      "paperAnchorTop": "MuiDrawer-paperAnchorTop",
+      "root": "MuiDrawer-root",
+    }
+  }
+>
+  <WithStyles(ForwardRef(List))>
+    <ListItemLink
+      handleClick={[MockFunction]}
+      icon={
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon="home"
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      }
+      primary="Home"
+      to="/"
+    />
+  </WithStyles(ForwardRef(List))>
+</ForwardRef(Drawer)>
+`;
 
-exports[`renders without crashing 2`] = `ShallowWrapper {}`;
+exports[`renders without crashing 2`] = `
+<ForwardRef(Drawer)
+  classes={
+    Object {
+      "docked": "MuiDrawer-docked",
+      "modal": "MuiDrawer-modal",
+      "paper": "MuiDrawer-paper",
+      "paperAnchorBottom": "MuiDrawer-paperAnchorBottom",
+      "paperAnchorDockedBottom": "MuiDrawer-paperAnchorDockedBottom",
+      "paperAnchorDockedLeft": "MuiDrawer-paperAnchorDockedLeft",
+      "paperAnchorDockedRight": "MuiDrawer-paperAnchorDockedRight",
+      "paperAnchorDockedTop": "MuiDrawer-paperAnchorDockedTop",
+      "paperAnchorLeft": "MuiDrawer-paperAnchorLeft",
+      "paperAnchorRight": "MuiDrawer-paperAnchorRight",
+      "paperAnchorTop": "MuiDrawer-paperAnchorTop",
+      "root": "MuiDrawer-root",
+    }
+  }
+>
+  <WithStyles(ForwardRef(List))>
+    <ListItemLink
+      primary="Home"
+      to="/"
+    />
+  </WithStyles(ForwardRef(List))>
+</ForwardRef(Drawer)>
+`;

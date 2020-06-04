@@ -46,6 +46,7 @@ const MenuBar = ({ children }) => {
       >
         <Toolbar>
           <IconButton
+            id="open-menubar-button"
             color="inherit"
             aria-label="open drawer"
             onClick={handleDrawerOpen}
@@ -55,11 +56,12 @@ const MenuBar = ({ children }) => {
             <MenuIcon />
           </IconButton>
           <Typography variant="overline" display="block">
-            {location.pathname.replace(/[^a-z0-9]/gi, "")}
+            {location && location.pathname.replace(/[^a-z0-9]/gi, "")}
           </Typography>
         </Toolbar>
       </AppBar>
       <Drawer
+        id="menubar-drawer"
         className={classes.drawer}
         variant="persistent"
         anchor="left"
@@ -69,7 +71,7 @@ const MenuBar = ({ children }) => {
         }}
       >
         <div className={classes.drawerHeader}>
-          <IconButton onClick={handleDrawerClose}>
+          <IconButton id="close-menubar-button" onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
               <ChevronLeftIcon />
             ) : (

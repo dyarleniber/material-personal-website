@@ -3,12 +3,11 @@ import Grid from "@material-ui/core/Grid";
 import Avatar from "@material-ui/core/Avatar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
+import MailIcon from "@material-ui/icons/Mail";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import { personalData } from "../../config/dataApi";
 import useStyles from "./styles";
-import ButtonLink from "../ButtonLink";
 
 const PersonalData = () => {
   const classes = useStyles();
@@ -46,7 +45,7 @@ const PersonalData = () => {
                 component="a"
                 href={`mailto:${email}`}
               >
-                <FontAwesomeIcon icon={faEnvelope} />
+                <MailIcon />
               </IconButton>
             </Grid>
             {socialMedias.map((socialMedia) => (
@@ -62,13 +61,6 @@ const PersonalData = () => {
               </Grid>
             ))}
           </Grid>
-        </Grid>
-        <Grid item xs={12}>
-          <ButtonLink
-            variant="outlined"
-            to={"/portfolio"}
-            primary={"See my portfolio"}
-          />
         </Grid>
       </Grid>
     </div>

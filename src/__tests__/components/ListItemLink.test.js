@@ -1,5 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
+import List from "@material-ui/core/List";
+import Drawer from "@material-ui/core/Drawer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "../../config/icons";
@@ -15,13 +17,25 @@ it("renders without crashing", () => {
     icon: <FontAwesomeIcon icon={"home"} />,
     handleClick: jest.fn(),
   };
-  wrapper = shallow(<ListItemLink {...props} />);
+  wrapper = shallow(
+    <Drawer>
+      <List>
+        <ListItemLink {...props} />
+      </List>
+    </Drawer>
+  );
   expect(wrapper).toMatchSnapshot();
 
   props = {
     to: "/",
     primary: "Home",
   };
-  wrapper = shallow(<ListItemLink {...props} />);
+  wrapper = shallow(
+    <Drawer>
+      <List>
+        <ListItemLink {...props} />
+      </List>
+    </Drawer>
+  );
   expect(wrapper).toMatchSnapshot();
 });

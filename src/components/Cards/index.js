@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -78,4 +78,4 @@ Cards.propTypes = {
   github: PropTypes.string,
 };
 
-export default memo(Cards);
+export default Cards;
