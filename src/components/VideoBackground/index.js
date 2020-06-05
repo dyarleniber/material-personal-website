@@ -11,7 +11,7 @@ import videoSource320 from "../../assets/videos/code320.mp4";
 import videoSource480 from "../../assets/videos/code480.mp4";
 import videoSource720 from "../../assets/videos/code720.mp4";
 
-const VideoBackground = ({ children }) => {
+function VideoBackground({ children }) {
   const classes = useStyles();
 
   const [videPoster, setVidePoster] = useState(videPoster240);
@@ -50,7 +50,7 @@ const VideoBackground = ({ children }) => {
       <div className={classes.content}>{children}</div>
     </>
   );
-};
+}
 
 VideoBackground.propTypes = {
   children: PropTypes.node.isRequired,

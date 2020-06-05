@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<Switch>
+  <Route
+    path="/portfolio"
+  >
+    <Portfolio />
+  </Route>
+  <Route
+    path="/"
+  >
+    <Home />
+  </Route>
+</Switch>
+`;

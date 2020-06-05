@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import { useLocation } from "react-router-dom";
-import { useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -12,7 +11,6 @@ import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import Container from "@material-ui/core/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -20,9 +18,8 @@ import { menuItems } from "../../config/dataApi";
 import useStyles from "./styles";
 import ListItemLink from "../ListItemLink";
 
-const MenuBar = ({ children }) => {
+function MenuBar({ children }) {
   const classes = useStyles();
-  const theme = useTheme();
 
   let location = useLocation();
 
@@ -72,11 +69,7 @@ const MenuBar = ({ children }) => {
       >
         <div className={classes.drawerHeader}>
           <IconButton id="close-menubar-button" onClick={handleDrawerClose}>
-            {theme.direction === "ltr" ? (
-              <ChevronLeftIcon />
-            ) : (
-              <ChevronRightIcon />
-            )}
+            <ChevronLeftIcon />
           </IconButton>
         </div>
         <Divider />
@@ -102,7 +95,7 @@ const MenuBar = ({ children }) => {
       </main>
     </div>
   );
-};
+}
 
 MenuBar.propTypes = {
   children: PropTypes.node.isRequired,

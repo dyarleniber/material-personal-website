@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { personalData } from "../../config/dataApi";
 import useStyles from "./styles";
 
-const PersonalData = () => {
+function PersonalData() {
   const classes = useStyles();
 
   const {
@@ -65,6 +65,6 @@ const PersonalData = () => {
       </Grid>
     </div>
   );
-};
+}
 
 export default PersonalData;

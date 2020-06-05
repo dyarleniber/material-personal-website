@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 
-const Routes = () => {
+function Routes() {
   return (
     <Switch>
       <Route path="/portfolio">
@@ -15,6 +15,6 @@ const Routes = () => {
       </Route>
     </Switch>
   );
-};
+}
 
 export default Routes;

@@ -16,7 +16,7 @@ import { faDesktop, faCode } from "@fortawesome/free-solid-svg-icons";
 import useStyles from "./styles";
 import * as types from "./constants";
 
-const Cards = ({ name, description, type, technologies, homepage, github }) => {
+function Cards({ name, description, type, technologies, homepage, github }) {
   const classes = useStyles();
 
   return (
@@ -67,7 +67,7 @@ const Cards = ({ name, description, type, technologies, homepage, github }) => {
       </CardActions>
     </Card>
   );
-};
+}
 
 Cards.propTypes = {
   name: PropTypes.string.isRequired,

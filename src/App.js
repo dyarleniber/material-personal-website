@@ -6,7 +6,7 @@ import "../src/config/icons";
 import MenuBar from "./components/MenuBar";
 import Routes from "./Routes";
 
-const App = () => {
+function App() {
   return (
     <Router>
       <CssBaseline />
@@ -15,6 +15,6 @@ const App = () => {
       </MenuBar>
     </Router>
   );
-};
+}
 
 export default App;

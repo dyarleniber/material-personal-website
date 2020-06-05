@@ -5,7 +5,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 
-const ListItemLink = ({ to, primary, icon, handleClick }) => {
+function ListItemLink({ to, primary, icon, handleClick }) {
   const renderLink = useMemo(
     () =>
       forwardRef(function renderLink(itemProps, ref) {
@@ -22,7 +22,7 @@ const ListItemLink = ({ to, primary, icon, handleClick }) => {
       </ListItem>
     </li>
   );
-};
+}
 
 ListItemLink.propTypes = {
   to: PropTypes.string.isRequired,

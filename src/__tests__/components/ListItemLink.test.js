@@ -1,7 +1,6 @@
 import React from "react";
-import { shallow } from "enzyme";
-import List from "@material-ui/core/List";
-import Drawer from "@material-ui/core/Drawer";
+import { mount } from "enzyme";
+import { MemoryRouter } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "../../config/icons";
@@ -17,12 +16,10 @@ it("renders without crashing", () => {
     icon: <FontAwesomeIcon icon={"home"} />,
     handleClick: jest.fn(),
   };
-  wrapper = shallow(
-    <Drawer>
-      <List>
-        <ListItemLink {...props} />
-      </List>
-    </Drawer>
+  wrapper = mount(
+    <MemoryRouter initialEntries={[{ pathname: "/", key: "testKey" }]}>
+      <ListItemLink {...props} />
+    </MemoryRouter>
   );
   expect(wrapper).toMatchSnapshot();
 
@@ -30,12 +27,10 @@ it("renders without crashing", () => {
     to: "/",
     primary: "Home",
   };
-  wrapper = shallow(
-    <Drawer>
-      <List>
-        <ListItemLink {...props} />
-      </List>
-    </Drawer>
+  wrapper = mount(
+    <MemoryRouter initialEntries={[{ pathname: "/", key: "testKey" }]}>
+      <ListItemLink {...props} />
+    </MemoryRouter>
   );
   expect(wrapper).toMatchSnapshot();
 });
