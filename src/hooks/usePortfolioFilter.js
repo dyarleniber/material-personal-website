@@ -29,7 +29,7 @@ function usePortfolioFilter(portfolioItems) {
   useEffect(() => {
     setFilteredPortfolio(handleFilter(portfolioItems, filter));
     setFilteredPortfolio((prevState) => handleOrder(prevState));
-  }, [filter]);
+  }, [filter, portfolioItems]);
 
   return { filteredPortfolio, filter, setFilter };
 }
