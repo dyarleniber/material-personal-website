@@ -3,16 +3,17 @@ import { shallow } from "enzyme";
 
 import VideoBackground from "../../components/VideoBackground";
 import useBackgroundVideo from "../../hooks/useBackgroundVideo";
-import videPoster240 from "../../assets/images/code240.jpg";
-import videoSource240 from "../../assets/videos/code240.mp4";
 
 jest.mock("../../hooks/useBackgroundVideo");
 
 it("renders without crashing", () => {
+  const videPoster = "videopostertest.jpg";
+  const videoSource = "videosourcetest.mp4";
+
   useBackgroundVideo.mockImplementation(() => {
     return {
-      videPoster: videPoster240,
-      videoSource: videoSource240,
+      videPoster: videPoster,
+      videoSource: videoSource,
     };
   });
 
@@ -23,6 +24,6 @@ it("renders without crashing", () => {
   );
 
   expect(wrapper).toMatchSnapshot();
-  expect(wrapper.find("video").prop("poster")).toEqual(videPoster240);
-  expect(wrapper.find("source").prop("src")).toEqual(videoSource240);
+  expect(wrapper.find("video").prop("poster")).toEqual(videPoster);
+  expect(wrapper.find("source").prop("src")).toEqual(videoSource);
 });

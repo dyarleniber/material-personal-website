@@ -7,10 +7,10 @@ exports[`renders without crashing 1`] = `
     className="makeStyles-video-1"
     loop={true}
     playsInline={true}
-    poster="code240.jpg"
+    poster="videopostertest.jpg"
   >
     <source
-      src="code240.mp4"
+      src="videosourcetest.mp4"
       type="video/mp4"
     />
   </video>
