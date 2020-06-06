@@ -1,5 +1,5 @@
 import React from "react";
-import { mount } from "enzyme";
+import { shallow } from "enzyme";
 import { MemoryRouter } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -16,7 +16,7 @@ it("renders without crashing", () => {
     icon: <FontAwesomeIcon icon={"home"} />,
     handleClick: jest.fn(),
   };
-  wrapper = mount(
+  wrapper = shallow(
     <MemoryRouter initialEntries={[{ pathname: "/", key: "testKey" }]}>
       <ListItemLink {...props} />
     </MemoryRouter>
@@ -27,7 +27,7 @@ it("renders without crashing", () => {
     to: "/",
     primary: "Home",
   };
-  wrapper = mount(
+  wrapper = shallow(
     <MemoryRouter initialEntries={[{ pathname: "/", key: "testKey" }]}>
       <ListItemLink {...props} />
     </MemoryRouter>

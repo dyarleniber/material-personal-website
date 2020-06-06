@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing - 480px width 1`] = `
-<VideoBackground>
+exports[`renders without crashing 1`] = `
+<Fragment>
   <video
     autoPlay={true}
     className="makeStyles-video-1"
@@ -24,86 +24,5 @@ exports[`renders without crashing - 480px width 1`] = `
       className="unique"
     />
   </div>
-</VideoBackground>
-`;
-
-exports[`renders without crashing - 481px width 1`] = `
-<VideoBackground>
-  <video
-    autoPlay={true}
-    className="makeStyles-video-1"
-    loop={true}
-    playsInline={true}
-    poster="code320.jpg"
-  >
-    <source
-      src="code320.mp4"
-      type="video/mp4"
-    />
-  </video>
-  <div
-    className="makeStyles-overlay-2"
-  />
-  <div
-    className="makeStyles-content-3"
-  >
-    <div
-      className="unique"
-    />
-  </div>
-</VideoBackground>
-`;
-
-exports[`renders without crashing - 721px width 1`] = `
-<VideoBackground>
-  <video
-    autoPlay={true}
-    className="makeStyles-video-1"
-    loop={true}
-    playsInline={true}
-    poster="code480.jpg"
-  >
-    <source
-      src="code480.mp4"
-      type="video/mp4"
-    />
-  </video>
-  <div
-    className="makeStyles-overlay-2"
-  />
-  <div
-    className="makeStyles-content-3"
-  >
-    <div
-      className="unique"
-    />
-  </div>
-</VideoBackground>
-`;
-
-exports[`renders without crashing - 1281px width 1`] = `
-<VideoBackground>
-  <video
-    autoPlay={true}
-    className="makeStyles-video-1"
-    loop={true}
-    playsInline={true}
-    poster="code720.jpg"
-  >
-    <source
-      src="code720.mp4"
-      type="video/mp4"
-    />
-  </video>
-  <div
-    className="makeStyles-overlay-2"
-  />
-  <div
-    className="makeStyles-content-3"
-  >
-    <div
-      className="unique"
-    />
-  </div>
-</VideoBackground>
+</Fragment>
 `;

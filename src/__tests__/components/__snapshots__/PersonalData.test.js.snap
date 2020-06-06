@@ -199,6 +199,16 @@ exports[`renders without crashing 1`] = `
         </WithStyles(ForwardRef(Grid))>
       </WithStyles(ForwardRef(Grid))>
     </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    >
+      <ButtonLink
+        primary="See my portfolio"
+        to="/portfolio"
+        variant="outlined"
+      />
+    </WithStyles(ForwardRef(Grid))>
   </WithStyles(ForwardRef(Grid))>
 </div>
 `;

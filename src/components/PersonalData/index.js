@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { personalData } from "../../config/dataApi";
 import useStyles from "./styles";
+import ButtonLink from "../ButtonLink";
 
 function PersonalData() {
   const classes = useStyles();
@@ -61,6 +62,13 @@ function PersonalData() {
               </Grid>
             ))}
           </Grid>
+        </Grid>
+        <Grid item xs={12}>
+          <ButtonLink
+            variant="outlined"
+            to={"/portfolio"}
+            primary={"See my portfolio"}
+          />
         </Grid>
       </Grid>
     </div>
