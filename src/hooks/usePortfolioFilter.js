@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 
+import { portfolio } from "../config/dataApi";
 import * as filters from "../pages/Portfolio/constants";
 import * as types from "../components/Cards/constants";
 
-export const handleFilter = (portfolioItems, filter) =>
-  portfolioItems.filter((item) => {
+export const handleFilter = (items, filter) =>
+  items.filter((item) => {
     if (filter === filters.FRONTEND_FILTER) {
       return item.type === types.FRONTEND_TYPE;
     }
@@ -14,22 +15,22 @@ export const handleFilter = (portfolioItems, filter) =>
     return true;
   });
 
-const handleOrder = (portfolioItems) =>
-  portfolioItems.sort(function (a, b) {
+const handleOrder = (items) =>
+  items.sort(function (a, b) {
     if (a.id > b.id) {
       return 1;
     }
     return -1;
   });
 
-function usePortfolioFilter(portfolioItems) {
+function usePortfolioFilter() {
   const [filter, setFilter] = useState(filters.ALL_FILTER);
   const [filteredPortfolio, setFilteredPortfolio] = useState([]);
 
   useEffect(() => {
-    setFilteredPortfolio(handleFilter(portfolioItems, filter));
+    setFilteredPortfolio(handleFilter(portfolio, filter));
     setFilteredPortfolio((prevState) => handleOrder(prevState));
-  }, [filter, portfolioItems]);
+  }, [filter]);
 
   return { filteredPortfolio, filter, setFilter };
 }

@@ -3,15 +3,12 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Grid from "@material-ui/core/Grid";
 
-import { portfolio } from "../../config/dataApi";
 import * as filters from "./constants";
 import Card from "../../components/Cards";
 import usePortfolioFilter from "../../hooks/usePortfolioFilter";
 
 function Portfolio() {
-  const { filteredPortfolio, filter, setFilter } = usePortfolioFilter(
-    portfolio
-  );
+  const { filteredPortfolio, filter, setFilter } = usePortfolioFilter();
 
   const handleChange = (event, newValue) => {
     setFilter(newValue);

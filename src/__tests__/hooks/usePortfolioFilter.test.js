@@ -1,11 +1,24 @@
 import { renderHook, act } from "@testing-library/react-hooks";
 
+import * as data from "../../config/dataApi";
 import usePortfolioFilter from "../../hooks/usePortfolioFilter";
 import * as filters from "../../pages/Portfolio/constants";
 import * as types from "../../components/Cards/constants";
 
+const originalPortfolio = data.portfolio;
+
+beforeEach(() => {
+  delete data.portfolio;
+});
+
+afterAll(() => {
+  data.portfolio = originalPortfolio;
+});
+
 it("should return the initial portfolio filter state", () => {
-  const { result } = renderHook(() => usePortfolioFilter([]));
+  data.portfolio = [];
+
+  const { result } = renderHook(() => usePortfolioFilter());
 
   expect(result.current.filteredPortfolio).toEqual([]);
   expect(result.current.filter).toEqual(filters.ALL_FILTER);
@@ -53,14 +66,9 @@ it("should filter and sort portfolio items by id", () => {
     github: null,
   };
 
-  const { result } = renderHook(() =>
-    usePortfolioFilter([
-      backendItem3,
-      backendItem4,
-      frontendItem2,
-      frontendItem1,
-    ])
-  );
+  data.portfolio = [backendItem3, backendItem4, frontendItem2, frontendItem1];
+
+  const { result } = renderHook(() => usePortfolioFilter());
 
   expect(result.current.filteredPortfolio).toEqual([
     frontendItem1,
