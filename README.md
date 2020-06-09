@@ -7,11 +7,15 @@
 </p>
 
 <p align="center">
-  <img alt="CI/CD" src="https://github.com/dyarleniber/personal-website/workflows/CI/CD/badge.svg">
+  <a href="https://github.com/dyarleniber/personal-website/actions?query=workflow%3ACI%2FCD">
+    <img alt="CI/CD" src="https://github.com/dyarleniber/personal-website/workflows/CI/CD/badge.svg">
+  </a>
   <a href="https://codecov.io/gh/dyarleniber/personal-website">
     <img alt="Coverage" src="https://img.shields.io/codecov/c/github/dyarleniber/personal-website">
   </a>
-  <img alt="License" src="https://img.shields.io/github/license/dyarleniber/personal-website">
+  <a href="https://github.com/dyarleniber/personal-website/blob/master/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/dyarleniber/personal-website">
+  </a>
 </p>
 
 <p align="center">
