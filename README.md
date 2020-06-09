@@ -1,68 +1,60 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  Personal website
+</h1>
 
-## Available Scripts
+<p align="center">
+  :computer: Personal website using Javascript, React, Hooks, Material-UI and Jest.
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  <img alt="CI/CD" src="https://github.com/dyarleniber/personal-website/workflows/CI/CD/badge.svg">
+  <a href="https://codecov.io/gh/dyarleniber/personal-website">
+    <img alt="Coverage" src="https://img.shields.io/codecov/c/github/dyarleniber/personal-website">
+  </a>
+  <img alt="License" src="https://img.shields.io/github/license/dyarleniber/personal-website">
+</p>
 
-### `yarn start`
+<p align="center">
+  <a href="https://dyarleniber.github.io/personal-website/">Live Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#gear-configuration">Configuration</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Personal website buit with [React](https://reactjs.org) on [Material Design](https://material.io) through [Material-UI](https://material-ui.com) library.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The code base is 100% covered by automated tests with [Jest](https://jestjs.io) and [Enzyme](https://enzymejs.github.io/enzyme).
 
-### `yarn test`
+The website is hosted on [GitHub Pages](https://pages.github.com). And a CI/CD workflow created on [GitHub Actions](https://github.com/features/actions) is responsible for automatically test the source code, generate a coverage report and upload it on [Codecov](https://codecov.io), build and deploy the project on [GitHub Pages](https://pages.github.com). All these jobs are activated by a push or pull request event on master branch.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![live-video](https://user-images.githubusercontent.com/40317398/84079796-0ed11b00-a9d3-11ea-875d-6ec0571fa77e.gif)
 
-### `yarn build`
+## :gear: Configuration
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To clone and run this application, you’ll need to have [Git](https://git-scm.com) and [Node.js v10.16](https://nodejs.org) or higher installed on your computer.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+From your command line:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clone this repository
+$ git clone https://github.com/dyarleniber/personal-website.git
 
-### `yarn eject`
+# Go into the repository folder
+$ cd personal-website
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Install dependencies
+$ npm install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Run the app in the development mode (open http://localhost:3000 to view it in the browser)
+$ npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Run the tests (in the interactive watch mode)
+$ npm test
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## :memo: License
 
-## Learn More
+This project is under the MIT license. See the [LICENSE](https://github.com/dyarleniber/personal-website/blob/master/LICENSE) for more information.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Made with ♥ by Dyarlen Iber :wave: [Get in touch!](https://dyarleniber.github.io/personal-website/)
