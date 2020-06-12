@@ -30,15 +30,15 @@ function Cards({ name, description, type, technologies, homepage, github }) {
               <FontAwesomeIcon icon={faCode} />
             )}
           </Avatar>
-          <Typography gutterBottom variant="overline" component="h6">
+          <Typography variant="overline" component="h6" gutterBottom>
             {type}
           </Typography>
         </CardMedia>
         <CardContent>
-          <Typography gutterBottom variant="h6">
+          <Typography variant="h6" gutterBottom>
             {name}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" component="p">
             {description}
           </Typography>
         </CardContent>
@@ -48,20 +48,20 @@ function Cards({ name, description, type, technologies, homepage, github }) {
           {technologies &&
             technologies.map((technologie) => (
               <Grid item key={technologie}>
-                <Chip label={technologie} color="primary" />
+                <Chip label={technologie} />
               </Grid>
             ))}
         </Grid>
       </CardActions>
       <CardActions>
         {homepage && (
-          <Button size="small" color="primary" target="_blank" href={homepage}>
+          <Button size="small" target="_blank" href={homepage}>
             Homepage
           </Button>
         )}
         {github && (
-          <Button size="small" color="primary" target="_blank" href={github}>
-            Source code
+          <Button size="small" target="_blank" href={github}>
+            GitHub
           </Button>
         )}
       </CardActions>

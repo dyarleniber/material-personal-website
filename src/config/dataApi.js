@@ -39,6 +39,12 @@ export const menuItems = [
   },
 ];
 
+export const portfolioData = {
+  title: "Portfolio",
+  description:
+    "All my projects are covered by automated tests and deployed on platforms such as GitHub Pages or Netlify. For more details about the source code, automated tests, CI/CD workflow and technologies used, please visit the github page of each project.",
+};
+
 const frontEndPortfolio = [
   {
     id: 101,

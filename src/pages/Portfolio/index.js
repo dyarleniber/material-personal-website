@@ -2,7 +2,9 @@ import React from "react";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
 
+import { portfolioData } from "../../config/dataApi";
 import * as filters from "./constants";
 import Card from "../../components/Cards";
 import usePortfolioFilter from "../../hooks/usePortfolioFilter";
@@ -17,14 +19,20 @@ function Portfolio() {
   return (
     <Grid container spacing={4}>
       <Grid item xs={12}>
+        <Typography variant="h2" gutterBottom>
+          {portfolioData.title}
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          {portfolioData.description}
+        </Typography>
+      </Grid>
+      <Grid item xs={12}>
         <Tabs
           id="tab-filter"
           value={filter}
           onChange={handleChange}
-          variant="fullWidth"
-          indicatorColor="primary"
-          textColor="primary"
           aria-label="porfolio filter"
+          centered
         >
           <Tab value={filters.ALL_FILTER} label="ALL" />
           <Tab value={filters.FRONTEND_FILTER} label="FRONT-END" />
