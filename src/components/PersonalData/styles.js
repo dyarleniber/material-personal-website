@@ -1,8 +1,7 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-  paper: {
-    marginTop: theme.spacing(8),
+  root: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -13,8 +12,13 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(18),
     height: theme.spacing(18),
   },
-  socialmedia: {
-    flexGrow: 1,
+  text: {
+    position: "relative",
+    maxWidth: 720,
+    textAlign: "center",
+    "& > *": {
+      marginBottom: theme.spacing(2),
+    },
   },
 }));
 

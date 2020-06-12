@@ -1,18 +1,15 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
-import { useLocation } from "react-router-dom";
 import Drawer from "@material-ui/core/Drawer";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Container from "@material-ui/core/Container";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { menuItems } from "../../config/dataApi";
 import useStyles from "./styles";
@@ -20,8 +17,6 @@ import ListItemLink from "../ListItemLink";
 
 function MenuBar({ children }) {
   const classes = useStyles();
-
-  let location = useLocation();
 
   const [open, setOpen] = useState(false);
 
@@ -52,9 +47,6 @@ function MenuBar({ children }) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="overline" display="block">
-            {location && location.pathname.replace(/[^a-z0-9]/gi, "")}
-          </Typography>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -79,7 +71,6 @@ function MenuBar({ children }) {
               key={menuItem.to}
               to={menuItem.to}
               primary={menuItem.primary}
-              icon={<FontAwesomeIcon icon={menuItem.icon} />}
               handleClick={handleDrawerClose}
             />
           ))}

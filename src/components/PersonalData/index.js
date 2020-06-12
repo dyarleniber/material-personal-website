@@ -14,6 +14,7 @@ function PersonalData() {
   const classes = useStyles();
 
   const {
+    greeting,
     name,
     description,
     email,
@@ -22,53 +23,40 @@ function PersonalData() {
   } = personalData;
 
   return (
-    <div className={classes.paper}>
+    <div className={classes.root}>
       <Avatar
-        alt="profile picture"
+        alt="Profile picture"
         src={profilePicture}
         className={classes.avatar}
       />
-      <Typography variant="h5" gutterBottom>
-        {name}
-      </Typography>
-      <Typography variant="body2" gutterBottom>
-        {description}
-      </Typography>
-      <Typography variant="overline" display="block" gutterBottom>
-        {email}
-      </Typography>
-      <Grid container className={classes.socialmedia} spacing={1}>
+      <Grid container className={classes.text}>
         <Grid item xs={12}>
-          <Grid container justify="center" spacing={1}>
-            <Grid item>
-              <IconButton
-                aria-label="email"
-                component="a"
-                href={`mailto:${email}`}
-              >
-                <MailIcon />
-              </IconButton>
-            </Grid>
-            {socialMedias.map((socialMedia) => (
-              <Grid item key={socialMedia.name}>
-                <IconButton
-                  aria-label={socialMedia.name}
-                  target="_blank"
-                  component="a"
-                  href={socialMedia.url}
-                >
-                  <FontAwesomeIcon icon={["fab", socialMedia.name]} />
-                </IconButton>
-              </Grid>
-            ))}
-          </Grid>
+          <Typography variant="h2">{`${greeting} ${name}`}</Typography>
         </Grid>
         <Grid item xs={12}>
-          <ButtonLink
-            variant="outlined"
-            to={"/portfolio"}
-            primary={"See my portfolio"}
-          />
+          <Typography variant="h5">{description}</Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Typography variant="button">{email}</Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <IconButton aria-label="email" component="a" href={`mailto:${email}`}>
+            <MailIcon />
+          </IconButton>
+          {socialMedias.map((socialMedia) => (
+            <IconButton
+              key={socialMedia.name}
+              aria-label={socialMedia.name}
+              component="a"
+              target="_blank"
+              href={socialMedia.url}
+            >
+              <FontAwesomeIcon icon={["fab", socialMedia.name]} />
+            </IconButton>
+          ))}
+        </Grid>
+        <Grid item xs={12}>
+          <ButtonLink to={"/portfolio"} primary={"See my portfolio"} />
         </Grid>
       </Grid>
     </div>

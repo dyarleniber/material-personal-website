@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link as RouterLink } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 
-function ButtonLink({ to, primary, variant }) {
+function ButtonLink({ to, primary }) {
   const renderLink = useMemo(
     () =>
       forwardRef(function renderLink(itemProps, ref) {
@@ -13,7 +13,7 @@ function ButtonLink({ to, primary, variant }) {
   );
 
   return (
-    <Button variant={variant} component={renderLink}>
+    <Button variant="contained" component={renderLink}>
       {primary}
     </Button>
   );
@@ -22,7 +22,6 @@ function ButtonLink({ to, primary, variant }) {
 ButtonLink.propTypes = {
   to: PropTypes.string.isRequired,
   primary: PropTypes.string.isRequired,
-  variant: PropTypes.string.isRequired,
 };
 
 export default ButtonLink;

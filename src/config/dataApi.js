@@ -2,9 +2,10 @@ import defaultprofilepic from "../assets/images/defaultprofilepic.jfif";
 import * as portfolioTypes from "../components/Cards/constants";
 
 export const personalData = {
+  greeting: "Hi, I'm",
   name: "Dyarlen Iber",
   description:
-    "Full-Stack Developer | PHP | Laravel | MySQL | JavaScript | Node.js | MongoDB | React | Go",
+    "I'm a Full-Stack Developer with experience in the following technologies: PHP, Laravel, JavaScript, Node.js, React, MySQL, MongoDB and Go.",
   email: "dyarlen1@gmail.com",
   profilePicture: defaultprofilepic,
   socialMedias: [
@@ -31,12 +32,10 @@ export const menuItems = [
   {
     to: "/",
     primary: "Home",
-    icon: "home",
   },
   {
     to: "/portfolio",
     primary: "Portfolio",
-    icon: "project-diagram",
   },
 ];
 
@@ -94,10 +93,11 @@ const frontEndPortfolio = [
   {
     id: 105,
     name: "Personal website",
-    description: "My personal website.",
+    description:
+      "💻 Personal website using Javascript, React, Hooks, Material-UI and Jest.",
     type: portfolioTypes.FRONTEND_TYPE,
-    technologies: ["React", "Hooks", "Material-UI"],
-    homepage: "https://dyarleniber.github.io/personal-website/",
+    technologies: ["Javascript", "React", "Hooks", "Material-UI", "Jest"],
+    homepage: "http://dyarleniber.com",
     github: "https://github.com/dyarleniber/personal-website",
   },
 ];

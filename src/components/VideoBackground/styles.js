@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   video: {
     position: "fixed",
     right: "0",
@@ -21,13 +21,13 @@ const useStyles = makeStyles({
     padding: "0",
     overflow: "hidden",
     zIndex: "1",
-    backgroundImage: "linear-gradient(to right, #cdcdcd, #f5f5f5)",
-    opacity: "0.75",
+    backgroundImage: `linear-gradient(to bottom right, ${theme.palette.primary.light}, ${theme.palette.primary.main})`,
+    opacity: "0.90",
   },
   content: {
     zIndex: "2",
     position: "relative",
   },
-});
+}));
 
 export default useStyles;

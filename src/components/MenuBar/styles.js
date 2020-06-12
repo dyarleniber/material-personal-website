@@ -6,10 +6,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
   },
-  appBar: {
-    background: "#fafafa",
-    color: "#212121",
-  },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
     marginLeft: drawerWidth,
@@ -25,8 +21,7 @@ const useStyles = makeStyles((theme) => ({
     flexShrink: 0,
   },
   drawerPaper: {
-    background: "#fafafa",
-    color: "#212121",
+    background: theme.palette.background.default,
     width: drawerWidth,
   },
   drawerHeader: {
