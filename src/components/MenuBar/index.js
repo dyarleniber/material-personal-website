@@ -7,9 +7,10 @@ import Toolbar from "@material-ui/core/Toolbar";
 import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Container from "@material-ui/core/Container";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 import { menuItems } from "../../config/dataApi";
 import useStyles from "./styles";
@@ -45,7 +46,7 @@ function MenuBar({ children }) {
             edge="start"
             className={clsx(classes.menuButton, open && classes.hide)}
           >
-            <MenuIcon />
+            <FontAwesomeIcon icon={faBars} size="xs" />
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -61,7 +62,7 @@ function MenuBar({ children }) {
       >
         <div className={classes.drawerHeader}>
           <IconButton id="close-menubar-button" onClick={handleDrawerClose}>
-            <ChevronLeftIcon />
+            <FontAwesomeIcon icon={faChevronLeft} size="xs" />
           </IconButton>
         </div>
         <Divider />

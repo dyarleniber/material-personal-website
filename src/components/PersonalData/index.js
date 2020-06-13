@@ -3,8 +3,8 @@ import Grid from "@material-ui/core/Grid";
 import Avatar from "@material-ui/core/Avatar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
-import MailIcon from "@material-ui/icons/Mail";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import { personalData } from "../../config/dataApi";
 import useStyles from "./styles";
@@ -41,7 +41,7 @@ function PersonalData() {
         </Grid>
         <Grid item xs={12}>
           <IconButton aria-label="email" component="a" href={`mailto:${email}`}>
-            <MailIcon />
+            <FontAwesomeIcon icon={faEnvelope} />
           </IconButton>
           {socialMedias.map((socialMedia) => (
             <IconButton
