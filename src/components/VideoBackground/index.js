@@ -15,6 +15,7 @@ function VideoBackground({ children }) {
         playsInline
         autoPlay
         loop
+        muted
         poster={videPoster}
         className={classes.video}
       >

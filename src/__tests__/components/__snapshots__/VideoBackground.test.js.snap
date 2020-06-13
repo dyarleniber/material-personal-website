@@ -6,6 +6,7 @@ exports[`VideoBackground component should render without crashing 1`] = `
     autoPlay={true}
     className="makeStyles-video-1"
     loop={true}
+    muted={true}
     playsInline={true}
     poster="videopostertest.jpg"
   >
