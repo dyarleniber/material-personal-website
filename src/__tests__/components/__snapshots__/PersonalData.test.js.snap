@@ -2,202 +2,186 @@
 
 exports[`renders without crashing 1`] = `
 <div
-  className="makeStyles-paper-1"
+  className="makeStyles-root-1"
 >
   <WithStyles(ForwardRef(Avatar))
-    alt="profile picture"
+    alt="Profile picture"
     className="makeStyles-avatar-2"
     src="defaultprofilepic.jfif"
   />
-  <WithStyles(ForwardRef(Typography))
-    gutterBottom={true}
-    variant="h5"
-  >
-    Dyarlen Iber
-  </WithStyles(ForwardRef(Typography))>
-  <WithStyles(ForwardRef(Typography))
-    gutterBottom={true}
-    variant="body2"
-  >
-    Full-Stack Developer | PHP | Laravel | MySQL | JavaScript | Node.js | MongoDB | React | Go
-  </WithStyles(ForwardRef(Typography))>
-  <WithStyles(ForwardRef(Typography))
-    display="block"
-    gutterBottom={true}
-    variant="overline"
-  >
-    dyarlen1@gmail.com
-  </WithStyles(ForwardRef(Typography))>
   <WithStyles(ForwardRef(Grid))
-    className="makeStyles-socialmedia-3"
+    className="makeStyles-text-3"
     container={true}
-    spacing={1}
   >
     <WithStyles(ForwardRef(Grid))
       item={true}
       xs={12}
     >
-      <WithStyles(ForwardRef(Grid))
-        container={true}
-        justify="center"
-        spacing={1}
+      <WithStyles(ForwardRef(Typography))
+        variant="h2"
       >
-        <WithStyles(ForwardRef(Grid))
-          item={true}
-        >
-          <WithStyles(ForwardRef(IconButton))
-            aria-label="email"
-            component="a"
-            href="mailto:dyarlen1@gmail.com"
-          >
-            <MailIcon />
-          </WithStyles(ForwardRef(IconButton))>
-        </WithStyles(ForwardRef(Grid))>
-        <WithStyles(ForwardRef(Grid))
-          item={true}
-          key="github"
-        >
-          <WithStyles(ForwardRef(IconButton))
-            aria-label="github"
-            component="a"
-            href="https://github.com/dyarleniber"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              border={false}
-              className=""
-              fixedWidth={false}
-              flip={null}
-              icon={
-                Array [
-                  "fab",
-                  "github",
-                ]
-              }
-              inverse={false}
-              listItem={false}
-              mask={null}
-              pull={null}
-              pulse={false}
-              rotation={null}
-              size={null}
-              spin={false}
-              swapOpacity={false}
-              symbol={false}
-              title=""
-              transform={null}
-            />
-          </WithStyles(ForwardRef(IconButton))>
-        </WithStyles(ForwardRef(Grid))>
-        <WithStyles(ForwardRef(Grid))
-          item={true}
-          key="linkedin"
-        >
-          <WithStyles(ForwardRef(IconButton))
-            aria-label="linkedin"
-            component="a"
-            href="https://ie.linkedin.com/in/dyarleniber"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              border={false}
-              className=""
-              fixedWidth={false}
-              flip={null}
-              icon={
-                Array [
-                  "fab",
-                  "linkedin",
-                ]
-              }
-              inverse={false}
-              listItem={false}
-              mask={null}
-              pull={null}
-              pulse={false}
-              rotation={null}
-              size={null}
-              spin={false}
-              swapOpacity={false}
-              symbol={false}
-              title=""
-              transform={null}
-            />
-          </WithStyles(ForwardRef(IconButton))>
-        </WithStyles(ForwardRef(Grid))>
-        <WithStyles(ForwardRef(Grid))
-          item={true}
-          key="instagram"
-        >
-          <WithStyles(ForwardRef(IconButton))
-            aria-label="instagram"
-            component="a"
-            href="https://www.instagram.com/dyarleniber/"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              border={false}
-              className=""
-              fixedWidth={false}
-              flip={null}
-              icon={
-                Array [
-                  "fab",
-                  "instagram",
-                ]
-              }
-              inverse={false}
-              listItem={false}
-              mask={null}
-              pull={null}
-              pulse={false}
-              rotation={null}
-              size={null}
-              spin={false}
-              swapOpacity={false}
-              symbol={false}
-              title=""
-              transform={null}
-            />
-          </WithStyles(ForwardRef(IconButton))>
-        </WithStyles(ForwardRef(Grid))>
-        <WithStyles(ForwardRef(Grid))
-          item={true}
-          key="dev"
-        >
-          <WithStyles(ForwardRef(IconButton))
-            aria-label="dev"
-            component="a"
-            href="https://dev.to/dyarleniber"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              border={false}
-              className=""
-              fixedWidth={false}
-              flip={null}
-              icon={
-                Array [
-                  "fab",
-                  "dev",
-                ]
-              }
-              inverse={false}
-              listItem={false}
-              mask={null}
-              pull={null}
-              pulse={false}
-              rotation={null}
-              size={null}
-              spin={false}
-              swapOpacity={false}
-              symbol={false}
-              title=""
-              transform={null}
-            />
-          </WithStyles(ForwardRef(IconButton))>
-        </WithStyles(ForwardRef(Grid))>
-      </WithStyles(ForwardRef(Grid))>
+        Hi, I'm Dyarlen Iber
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    >
+      <WithStyles(ForwardRef(Typography))
+        variant="h5"
+      >
+        I'm a Full-Stack developer with professional experience working with PHP, Laravel, JavaScript, Node.js, SQL, React and Go. Take a look at my work or get in touch!
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    >
+      <WithStyles(ForwardRef(Typography))
+        variant="button"
+      >
+        dyarlen1@gmail.com
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    >
+      <WithStyles(ForwardRef(IconButton))
+        aria-label="email"
+        component="a"
+        href="mailto:dyarlen1@gmail.com"
+      >
+        <MailIcon />
+      </WithStyles(ForwardRef(IconButton))>
+      <WithStyles(ForwardRef(IconButton))
+        aria-label="github"
+        component="a"
+        href="https://github.com/dyarleniber"
+        key="github"
+        target="_blank"
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Array [
+              "fab",
+              "github",
+            ]
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      </WithStyles(ForwardRef(IconButton))>
+      <WithStyles(ForwardRef(IconButton))
+        aria-label="linkedin"
+        component="a"
+        href="https://ie.linkedin.com/in/dyarleniber"
+        key="linkedin"
+        target="_blank"
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Array [
+              "fab",
+              "linkedin",
+            ]
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      </WithStyles(ForwardRef(IconButton))>
+      <WithStyles(ForwardRef(IconButton))
+        aria-label="instagram"
+        component="a"
+        href="https://www.instagram.com/dyarleniber/"
+        key="instagram"
+        target="_blank"
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Array [
+              "fab",
+              "instagram",
+            ]
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      </WithStyles(ForwardRef(IconButton))>
+      <WithStyles(ForwardRef(IconButton))
+        aria-label="dev"
+        component="a"
+        href="https://dev.to/dyarleniber"
+        key="dev"
+        target="_blank"
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Array [
+              "fab",
+              "dev",
+            ]
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      </WithStyles(ForwardRef(IconButton))>
     </WithStyles(ForwardRef(Grid))>
     <WithStyles(ForwardRef(Grid))
       item={true}
@@ -206,7 +190,6 @@ exports[`renders without crashing 1`] = `
       <ButtonLink
         primary="See my portfolio"
         to="/portfolio"
-        variant="outlined"
       />
     </WithStyles(ForwardRef(Grid))>
   </WithStyles(ForwardRef(Grid))>

@@ -59,7 +59,6 @@ exports[`renders without crashing 1`] = `
         test 1
       </WithStyles(ForwardRef(Typography))>
       <WithStyles(ForwardRef(Typography))
-        color="textSecondary"
         component="p"
         variant="body2"
       >
@@ -78,7 +77,6 @@ exports[`renders without crashing 1`] = `
         key="technologie 1"
       >
         <WithStyles(ForwardRef(Chip))
-          color="primary"
           label="technologie 1"
         />
       </WithStyles(ForwardRef(Grid))>
@@ -86,7 +84,6 @@ exports[`renders without crashing 1`] = `
   </WithStyles(ForwardRef(CardActions))>
   <WithStyles(ForwardRef(CardActions))>
     <WithStyles(ForwardRef(Button))
-      color="primary"
       href="homepage"
       size="small"
       target="_blank"
@@ -94,12 +91,11 @@ exports[`renders without crashing 1`] = `
       Homepage
     </WithStyles(ForwardRef(Button))>
     <WithStyles(ForwardRef(Button))
-      color="primary"
       href="github"
       size="small"
       target="_blank"
     >
-      Source code
+      GitHub
     </WithStyles(ForwardRef(Button))>
   </WithStyles(ForwardRef(CardActions))>
 </WithStyles(ForwardRef(Card))>
@@ -164,7 +160,6 @@ exports[`renders without crashing 2`] = `
         test 2
       </WithStyles(ForwardRef(Typography))>
       <WithStyles(ForwardRef(Typography))
-        color="textSecondary"
         component="p"
         variant="body2"
       >
@@ -183,7 +178,6 @@ exports[`renders without crashing 2`] = `
         key="technologie 1"
       >
         <WithStyles(ForwardRef(Chip))
-          color="primary"
           label="technologie 1"
         />
       </WithStyles(ForwardRef(Grid))>
@@ -191,7 +185,6 @@ exports[`renders without crashing 2`] = `
   </WithStyles(ForwardRef(CardActions))>
   <WithStyles(ForwardRef(CardActions))>
     <WithStyles(ForwardRef(Button))
-      color="primary"
       href="homepage"
       size="small"
       target="_blank"
@@ -199,12 +192,11 @@ exports[`renders without crashing 2`] = `
       Homepage
     </WithStyles(ForwardRef(Button))>
     <WithStyles(ForwardRef(Button))
-      color="primary"
       href="github"
       size="small"
       target="_blank"
     >
-      Source code
+      GitHub
     </WithStyles(ForwardRef(Button))>
   </WithStyles(ForwardRef(CardActions))>
 </WithStyles(ForwardRef(Card))>
@@ -269,7 +261,6 @@ exports[`renders without crashing 3`] = `
         test 3
       </WithStyles(ForwardRef(Typography))>
       <WithStyles(ForwardRef(Typography))
-        color="textSecondary"
         component="p"
         variant="body2"
       >

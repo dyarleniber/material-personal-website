@@ -9,14 +9,29 @@ exports[`renders without crashing 1`] = `
     item={true}
     xs={12}
   >
+    <WithStyles(ForwardRef(Typography))
+      gutterBottom={true}
+      variant="h2"
+    >
+      Portfolio
+    </WithStyles(ForwardRef(Typography))>
+    <WithStyles(ForwardRef(Typography))
+      gutterBottom={true}
+      variant="body1"
+    >
+      All my projects are covered by automated tests and deployed on platforms such as GitHub Pages or Netlify. For more details about the source code, automated tests, CI/CD workflow and technologies used, please visit the github page of each project.
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    xs={12}
+  >
     <WithStyles(ForwardRef(Tabs))
       aria-label="porfolio filter"
+      centered={true}
       id="tab-filter"
-      indicatorColor="primary"
       onChange={[Function]}
-      textColor="primary"
       value="ALL"
-      variant="fullWidth"
     >
       <WithStyles(ForwardRef(Tab))
         label="ALL"
@@ -147,18 +162,18 @@ exports[`renders without crashing 1`] = `
         key="101"
       >
         <Cards
-          description="Application for search New York Times movie reviews and get movie critics using Javascript, React, Redux, React hooks, redux-saga and styled-components."
-          github="https://github.com/dyarleniber/nyt-movie-reviews"
-          homepage={null}
+          description="💻 Personal website using Javascript, React, Hooks, Material-UI and Jest."
+          github="https://github.com/dyarleniber/personal-website"
+          homepage="https://www.dyarleniber.com"
           id={101}
-          name="New York Times movie reviews"
+          name="Personal website"
           technologies={
             Array [
+              "Javascript",
               "React",
-              "Redux",
               "Hooks",
-              "redux-saga",
-              "styled-components",
+              "Material-UI",
+              "Jest",
             ]
           }
           type="FRONT-END"
@@ -169,11 +184,11 @@ exports[`renders without crashing 1`] = `
         key="102"
       >
         <Cards
-          description="Habit tracker front-end system using Javascript, React, Redux, React hooks, redux-saga and styled-components."
-          github="https://github.com/dyarleniber/habit-tracker-front-end"
+          description="Application for search New York Times movie reviews and get movie critics using Javascript, React, Redux, React hooks, redux-saga and styled-components."
+          github="https://github.com/dyarleniber/nyt-movie-reviews"
           homepage={null}
           id={102}
-          name="Habit tracker front-end"
+          name="New York Times movie reviews"
           technologies={
             Array [
               "React",
@@ -191,10 +206,32 @@ exports[`renders without crashing 1`] = `
         key="103"
       >
         <Cards
+          description="Habit tracker front-end system using Javascript, React, Redux, React hooks, redux-saga and styled-components."
+          github="https://github.com/dyarleniber/habit-tracker-front-end"
+          homepage={null}
+          id={103}
+          name="Habit tracker front-end"
+          technologies={
+            Array [
+              "React",
+              "Redux",
+              "Hooks",
+              "redux-saga",
+              "styled-components",
+            ]
+          }
+          type="FRONT-END"
+        />
+      </WithStyles(ForwardRef(Grid))>
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        key="104"
+      >
+        <Cards
           description="Udemy Final Project."
           github="https://github.com/dyarleniber/smart-brain"
           homepage={null}
-          id={103}
+          id={104}
           name="Smart brain"
           technologies={
             Array [
@@ -207,13 +244,13 @@ exports[`renders without crashing 1`] = `
       </WithStyles(ForwardRef(Grid))>
       <WithStyles(ForwardRef(Grid))
         item={true}
-        key="104"
+        key="105"
       >
         <Cards
           description="Simple To-do list with React, Redux and Hooks."
           github="https://github.com/dyarleniber/react-to-do-list"
           homepage={null}
-          id={104}
+          id={105}
           name="To-do list"
           technologies={
             Array [
@@ -221,26 +258,6 @@ exports[`renders without crashing 1`] = `
               "Redux",
               "Hooks",
               "Bootstrap",
-            ]
-          }
-          type="FRONT-END"
-        />
-      </WithStyles(ForwardRef(Grid))>
-      <WithStyles(ForwardRef(Grid))
-        item={true}
-        key="105"
-      >
-        <Cards
-          description="My personal website."
-          github="https://github.com/dyarleniber/personal-website"
-          homepage="https://dyarleniber.github.io/personal-website/"
-          id={105}
-          name="Personal website"
-          technologies={
-            Array [
-              "React",
-              "Hooks",
-              "Material-UI",
             ]
           }
           type="FRONT-END"

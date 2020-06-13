@@ -212,136 +212,56 @@ exports[`renders without crashing 1`] = `
                         role="button"
                         tabIndex={0}
                       >
-                        <WithStyles(ForwardRef(ListItemIcon))
+                        <WithStyles(ForwardRef(Typography))
+                          display="block"
                           key=".0"
+                          variant="button"
                         >
-                          <ForwardRef(ListItemIcon)
+                          <ForwardRef(Typography)
                             classes={
                               Object {
-                                "alignItemsFlexStart": "MuiListItemIcon-alignItemsFlexStart",
-                                "root": "MuiListItemIcon-root",
+                                "alignCenter": "MuiTypography-alignCenter",
+                                "alignJustify": "MuiTypography-alignJustify",
+                                "alignLeft": "MuiTypography-alignLeft",
+                                "alignRight": "MuiTypography-alignRight",
+                                "body1": "MuiTypography-body1",
+                                "body2": "MuiTypography-body2",
+                                "button": "MuiTypography-button",
+                                "caption": "MuiTypography-caption",
+                                "colorError": "MuiTypography-colorError",
+                                "colorInherit": "MuiTypography-colorInherit",
+                                "colorPrimary": "MuiTypography-colorPrimary",
+                                "colorSecondary": "MuiTypography-colorSecondary",
+                                "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                                "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                                "displayBlock": "MuiTypography-displayBlock",
+                                "displayInline": "MuiTypography-displayInline",
+                                "gutterBottom": "MuiTypography-gutterBottom",
+                                "h1": "MuiTypography-h1",
+                                "h2": "MuiTypography-h2",
+                                "h3": "MuiTypography-h3",
+                                "h4": "MuiTypography-h4",
+                                "h5": "MuiTypography-h5",
+                                "h6": "MuiTypography-h6",
+                                "noWrap": "MuiTypography-noWrap",
+                                "overline": "MuiTypography-overline",
+                                "paragraph": "MuiTypography-paragraph",
+                                "root": "MuiTypography-root",
+                                "srOnly": "MuiTypography-srOnly",
+                                "subtitle1": "MuiTypography-subtitle1",
+                                "subtitle2": "MuiTypography-subtitle2",
                               }
                             }
+                            display="block"
+                            variant="button"
                           >
-                            <div
-                              className="MuiListItemIcon-root"
+                            <span
+                              className="MuiTypography-root MuiTypography-button MuiTypography-displayBlock"
                             >
-                              <FontAwesomeIcon
-                                border={false}
-                                className=""
-                                fixedWidth={false}
-                                flip={null}
-                                icon="home"
-                                inverse={false}
-                                listItem={false}
-                                mask={null}
-                                pull={null}
-                                pulse={false}
-                                rotation={null}
-                                size={null}
-                                spin={false}
-                                swapOpacity={false}
-                                symbol={false}
-                                title=""
-                                transform={null}
-                              >
-                                <svg
-                                  aria-hidden="true"
-                                  className="svg-inline--fa fa-home fa-w-18 "
-                                  data-icon="home"
-                                  data-prefix="fas"
-                                  focusable="false"
-                                  role="img"
-                                  style={Object {}}
-                                  viewBox="0 0 576 512"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
-                                    fill="currentColor"
-                                    style={Object {}}
-                                  />
-                                </svg>
-                              </FontAwesomeIcon>
-                            </div>
-                          </ForwardRef(ListItemIcon)>
-                        </WithStyles(ForwardRef(ListItemIcon))>
-                        <WithStyles(ForwardRef(ListItemText))
-                          key=".1"
-                          primary="Home"
-                        >
-                          <ForwardRef(ListItemText)
-                            classes={
-                              Object {
-                                "dense": "MuiListItemText-dense",
-                                "inset": "MuiListItemText-inset",
-                                "multiline": "MuiListItemText-multiline",
-                                "primary": "MuiListItemText-primary",
-                                "root": "MuiListItemText-root",
-                                "secondary": "MuiListItemText-secondary",
-                              }
-                            }
-                            primary="Home"
-                          >
-                            <div
-                              className="MuiListItemText-root"
-                            >
-                              <WithStyles(ForwardRef(Typography))
-                                className="MuiListItemText-primary"
-                                component="span"
-                                display="block"
-                                variant="body1"
-                              >
-                                <ForwardRef(Typography)
-                                  className="MuiListItemText-primary"
-                                  classes={
-                                    Object {
-                                      "alignCenter": "MuiTypography-alignCenter",
-                                      "alignJustify": "MuiTypography-alignJustify",
-                                      "alignLeft": "MuiTypography-alignLeft",
-                                      "alignRight": "MuiTypography-alignRight",
-                                      "body1": "MuiTypography-body1",
-                                      "body2": "MuiTypography-body2",
-                                      "button": "MuiTypography-button",
-                                      "caption": "MuiTypography-caption",
-                                      "colorError": "MuiTypography-colorError",
-                                      "colorInherit": "MuiTypography-colorInherit",
-                                      "colorPrimary": "MuiTypography-colorPrimary",
-                                      "colorSecondary": "MuiTypography-colorSecondary",
-                                      "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                                      "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                                      "displayBlock": "MuiTypography-displayBlock",
-                                      "displayInline": "MuiTypography-displayInline",
-                                      "gutterBottom": "MuiTypography-gutterBottom",
-                                      "h1": "MuiTypography-h1",
-                                      "h2": "MuiTypography-h2",
-                                      "h3": "MuiTypography-h3",
-                                      "h4": "MuiTypography-h4",
-                                      "h5": "MuiTypography-h5",
-                                      "h6": "MuiTypography-h6",
-                                      "noWrap": "MuiTypography-noWrap",
-                                      "overline": "MuiTypography-overline",
-                                      "paragraph": "MuiTypography-paragraph",
-                                      "root": "MuiTypography-root",
-                                      "srOnly": "MuiTypography-srOnly",
-                                      "subtitle1": "MuiTypography-subtitle1",
-                                      "subtitle2": "MuiTypography-subtitle2",
-                                    }
-                                  }
-                                  component="span"
-                                  display="block"
-                                  variant="body1"
-                                >
-                                  <span
-                                    className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                  >
-                                    Home
-                                  </span>
-                                </ForwardRef(Typography)>
-                              </WithStyles(ForwardRef(Typography))>
-                            </div>
-                          </ForwardRef(ListItemText)>
-                        </WithStyles(ForwardRef(ListItemText))>
+                              Home
+                            </span>
+                          </ForwardRef(Typography)>
+                        </WithStyles(ForwardRef(Typography))>
                         <WithStyles(memo)
                           center={false}
                         >
@@ -567,82 +487,56 @@ exports[`renders without crashing 2`] = `
                         role="button"
                         tabIndex={0}
                       >
-                        <WithStyles(ForwardRef(ListItemText))
-                          key=".1"
-                          primary="Home"
+                        <WithStyles(ForwardRef(Typography))
+                          display="block"
+                          key=".0"
+                          variant="button"
                         >
-                          <ForwardRef(ListItemText)
+                          <ForwardRef(Typography)
                             classes={
                               Object {
-                                "dense": "MuiListItemText-dense",
-                                "inset": "MuiListItemText-inset",
-                                "multiline": "MuiListItemText-multiline",
-                                "primary": "MuiListItemText-primary",
-                                "root": "MuiListItemText-root",
-                                "secondary": "MuiListItemText-secondary",
+                                "alignCenter": "MuiTypography-alignCenter",
+                                "alignJustify": "MuiTypography-alignJustify",
+                                "alignLeft": "MuiTypography-alignLeft",
+                                "alignRight": "MuiTypography-alignRight",
+                                "body1": "MuiTypography-body1",
+                                "body2": "MuiTypography-body2",
+                                "button": "MuiTypography-button",
+                                "caption": "MuiTypography-caption",
+                                "colorError": "MuiTypography-colorError",
+                                "colorInherit": "MuiTypography-colorInherit",
+                                "colorPrimary": "MuiTypography-colorPrimary",
+                                "colorSecondary": "MuiTypography-colorSecondary",
+                                "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                                "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                                "displayBlock": "MuiTypography-displayBlock",
+                                "displayInline": "MuiTypography-displayInline",
+                                "gutterBottom": "MuiTypography-gutterBottom",
+                                "h1": "MuiTypography-h1",
+                                "h2": "MuiTypography-h2",
+                                "h3": "MuiTypography-h3",
+                                "h4": "MuiTypography-h4",
+                                "h5": "MuiTypography-h5",
+                                "h6": "MuiTypography-h6",
+                                "noWrap": "MuiTypography-noWrap",
+                                "overline": "MuiTypography-overline",
+                                "paragraph": "MuiTypography-paragraph",
+                                "root": "MuiTypography-root",
+                                "srOnly": "MuiTypography-srOnly",
+                                "subtitle1": "MuiTypography-subtitle1",
+                                "subtitle2": "MuiTypography-subtitle2",
                               }
                             }
-                            primary="Home"
+                            display="block"
+                            variant="button"
                           >
-                            <div
-                              className="MuiListItemText-root"
+                            <span
+                              className="MuiTypography-root MuiTypography-button MuiTypography-displayBlock"
                             >
-                              <WithStyles(ForwardRef(Typography))
-                                className="MuiListItemText-primary"
-                                component="span"
-                                display="block"
-                                variant="body1"
-                              >
-                                <ForwardRef(Typography)
-                                  className="MuiListItemText-primary"
-                                  classes={
-                                    Object {
-                                      "alignCenter": "MuiTypography-alignCenter",
-                                      "alignJustify": "MuiTypography-alignJustify",
-                                      "alignLeft": "MuiTypography-alignLeft",
-                                      "alignRight": "MuiTypography-alignRight",
-                                      "body1": "MuiTypography-body1",
-                                      "body2": "MuiTypography-body2",
-                                      "button": "MuiTypography-button",
-                                      "caption": "MuiTypography-caption",
-                                      "colorError": "MuiTypography-colorError",
-                                      "colorInherit": "MuiTypography-colorInherit",
-                                      "colorPrimary": "MuiTypography-colorPrimary",
-                                      "colorSecondary": "MuiTypography-colorSecondary",
-                                      "colorTextPrimary": "MuiTypography-colorTextPrimary",
-                                      "colorTextSecondary": "MuiTypography-colorTextSecondary",
-                                      "displayBlock": "MuiTypography-displayBlock",
-                                      "displayInline": "MuiTypography-displayInline",
-                                      "gutterBottom": "MuiTypography-gutterBottom",
-                                      "h1": "MuiTypography-h1",
-                                      "h2": "MuiTypography-h2",
-                                      "h3": "MuiTypography-h3",
-                                      "h4": "MuiTypography-h4",
-                                      "h5": "MuiTypography-h5",
-                                      "h6": "MuiTypography-h6",
-                                      "noWrap": "MuiTypography-noWrap",
-                                      "overline": "MuiTypography-overline",
-                                      "paragraph": "MuiTypography-paragraph",
-                                      "root": "MuiTypography-root",
-                                      "srOnly": "MuiTypography-srOnly",
-                                      "subtitle1": "MuiTypography-subtitle1",
-                                      "subtitle2": "MuiTypography-subtitle2",
-                                    }
-                                  }
-                                  component="span"
-                                  display="block"
-                                  variant="body1"
-                                >
-                                  <span
-                                    className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
-                                  >
-                                    Home
-                                  </span>
-                                </ForwardRef(Typography)>
-                              </WithStyles(ForwardRef(Typography))>
-                            </div>
-                          </ForwardRef(ListItemText)>
-                        </WithStyles(ForwardRef(ListItemText))>
+                              Home
+                            </span>
+                          </ForwardRef(Typography)>
+                        </WithStyles(ForwardRef(Typography))>
                         <WithStyles(memo)
                           center={false}
                         >

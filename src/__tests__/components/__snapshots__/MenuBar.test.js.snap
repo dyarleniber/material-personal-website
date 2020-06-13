@@ -5,13 +5,13 @@ exports[`renders without crashing 1`] = `
   className="makeStyles-root-1"
 >
   <WithStyles(ForwardRef(AppBar))
-    className="makeStyles-appBar-2"
+    className=""
     position="fixed"
   >
     <WithStyles(ForwardRef(Toolbar))>
       <WithStyles(ForwardRef(IconButton))
         aria-label="open drawer"
-        className="makeStyles-menuButton-4"
+        className="makeStyles-menuButton-3"
         color="inherit"
         edge="start"
         id="open-menubar-button"
@@ -19,18 +19,14 @@ exports[`renders without crashing 1`] = `
       >
         <MenuIcon />
       </WithStyles(ForwardRef(IconButton))>
-      <WithStyles(ForwardRef(Typography))
-        display="block"
-        variant="overline"
-      />
     </WithStyles(ForwardRef(Toolbar))>
   </WithStyles(ForwardRef(AppBar))>
   <WithStyles(ForwardRef(Drawer))
     anchor="left"
-    className="makeStyles-drawer-6"
+    className="makeStyles-drawer-5"
     classes={
       Object {
-        "paper": "makeStyles-drawerPaper-7",
+        "paper": "makeStyles-drawerPaper-6",
       }
     }
     id="menubar-drawer"
@@ -38,7 +34,7 @@ exports[`renders without crashing 1`] = `
     variant="persistent"
   >
     <div
-      className="makeStyles-drawerHeader-8"
+      className="makeStyles-drawerHeader-7"
     >
       <WithStyles(ForwardRef(IconButton))
         id="close-menubar-button"
@@ -51,54 +47,12 @@ exports[`renders without crashing 1`] = `
     <WithStyles(ForwardRef(List))>
       <ListItemLink
         handleClick={[Function]}
-        icon={
-          <FontAwesomeIcon
-            border={false}
-            className=""
-            fixedWidth={false}
-            flip={null}
-            icon="home"
-            inverse={false}
-            listItem={false}
-            mask={null}
-            pull={null}
-            pulse={false}
-            rotation={null}
-            size={null}
-            spin={false}
-            swapOpacity={false}
-            symbol={false}
-            title=""
-            transform={null}
-          />
-        }
         key="/"
         primary="Home"
         to="/"
       />
       <ListItemLink
         handleClick={[Function]}
-        icon={
-          <FontAwesomeIcon
-            border={false}
-            className=""
-            fixedWidth={false}
-            flip={null}
-            icon="project-diagram"
-            inverse={false}
-            listItem={false}
-            mask={null}
-            pull={null}
-            pulse={false}
-            rotation={null}
-            size={null}
-            spin={false}
-            swapOpacity={false}
-            symbol={false}
-            title=""
-            transform={null}
-          />
-        }
         key="/portfolio"
         primary="Portfolio"
         to="/portfolio"
@@ -106,10 +60,10 @@ exports[`renders without crashing 1`] = `
     </WithStyles(ForwardRef(List))>
   </WithStyles(ForwardRef(Drawer))>
   <main
-    className="makeStyles-content-9"
+    className="makeStyles-content-8"
   >
     <div
-      className="makeStyles-drawerHeader-8"
+      className="makeStyles-drawerHeader-7"
     />
     <WithStyles(ForwardRef(Container))
       component="main"

@@ -55,7 +55,7 @@ exports[`renders without crashing 1`] = `
             "render": [Function],
           }
         }
-        variant="outlined"
+        variant="contained"
       >
         <ForwardRef(Button)
           classes={
@@ -97,10 +97,10 @@ exports[`renders without crashing 1`] = `
               "render": [Function],
             }
           }
-          variant="outlined"
+          variant="contained"
         >
           <WithStyles(ForwardRef(ButtonBase))
-            className="MuiButton-root MuiButton-outlined"
+            className="MuiButton-root MuiButton-contained"
             component={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -113,7 +113,7 @@ exports[`renders without crashing 1`] = `
             type="button"
           >
             <ForwardRef(ButtonBase)
-              className="MuiButton-root MuiButton-outlined"
+              className="MuiButton-root MuiButton-contained"
               classes={
                 Object {
                   "disabled": "Mui-disabled",
@@ -134,7 +134,7 @@ exports[`renders without crashing 1`] = `
             >
               <ForwardRef(renderLink)
                 aria-disabled={false}
-                className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+                className="MuiButtonBase-root MuiButton-root MuiButton-contained"
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onFocus={[Function]}
@@ -151,7 +151,7 @@ exports[`renders without crashing 1`] = `
               >
                 <Link
                   aria-disabled={false}
-                  className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+                  className="MuiButtonBase-root MuiButton-root MuiButton-contained"
                   onBlur={[Function]}
                   onDragLeave={[Function]}
                   onFocus={[Function]}
@@ -169,7 +169,7 @@ exports[`renders without crashing 1`] = `
                 >
                   <LinkAnchor
                     aria-disabled={false}
-                    className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+                    className="MuiButtonBase-root MuiButton-root MuiButton-contained"
                     href="/portfolio"
                     navigate={[Function]}
                     onBlur={[Function]}
@@ -188,7 +188,7 @@ exports[`renders without crashing 1`] = `
                   >
                     <a
                       aria-disabled={false}
-                      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+                      className="MuiButtonBase-root MuiButton-root MuiButton-contained"
                       href="/portfolio"
                       onBlur={[Function]}
                       onClick={[Function]}
