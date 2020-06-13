@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing 1`] = `
+exports[`Cards component should render without crashing 1`] = `
 <WithStyles(ForwardRef(Card))
   className="makeStyles-root-1"
 >
@@ -101,7 +101,7 @@ exports[`renders without crashing 1`] = `
 </WithStyles(ForwardRef(Card))>
 `;
 
-exports[`renders without crashing 2`] = `
+exports[`Cards component should render without crashing 2`] = `
 <WithStyles(ForwardRef(Card))
   className="makeStyles-root-1"
 >
@@ -202,7 +202,7 @@ exports[`renders without crashing 2`] = `
 </WithStyles(ForwardRef(Card))>
 `;
 
-exports[`renders without crashing 3`] = `
+exports[`Cards component should render without crashing 3`] = `
 <WithStyles(ForwardRef(Card))
   className="makeStyles-root-1"
 >

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing 1`] = `
+exports[`ButtonLink component should render without crashing 1`] = `
 <MemoryRouter
   initialEntries={
     Array [
@@ -46,7 +46,6 @@ exports[`renders without crashing 1`] = `
     <ButtonLink
       primary="See my portfolio"
       to="/portfolio"
-      variant="outlined"
     >
       <WithStyles(ForwardRef(Button))
         component={

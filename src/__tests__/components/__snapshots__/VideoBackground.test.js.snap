@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing 1`] = `
+exports[`VideoBackground component should render without crashing 1`] = `
 <Fragment>
   <video
     autoPlay={true}

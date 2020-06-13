@@ -3,7 +3,9 @@ import { shallow } from "enzyme";
 
 import Home from "../../pages/Home";
 
-it("renders without crashing", () => {
-  const wrapper = shallow(<Home />);
-  expect(wrapper).toMatchSnapshot();
+describe("Home page", () => {
+  it("should render without crashing", () => {
+    const wrapper = shallow(<Home />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });

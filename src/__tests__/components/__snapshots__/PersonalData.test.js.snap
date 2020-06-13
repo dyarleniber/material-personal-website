@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing 1`] = `
+exports[`PersonalData component should render without crashing 1`] = `
 <div
   className="makeStyles-root-1"
 >
   <WithStyles(ForwardRef(Avatar))
     alt="Profile picture"
     className="makeStyles-avatar-2"
-    src="defaultprofilepic.jfif"
+    src="profilePicture"
   />
   <WithStyles(ForwardRef(Grid))
     className="makeStyles-text-3"
@@ -20,7 +20,7 @@ exports[`renders without crashing 1`] = `
       <WithStyles(ForwardRef(Typography))
         variant="h2"
       >
-        Hi, I'm Dyarlen Iber
+        greeting name
       </WithStyles(ForwardRef(Typography))>
     </WithStyles(ForwardRef(Grid))>
     <WithStyles(ForwardRef(Grid))
@@ -30,7 +30,7 @@ exports[`renders without crashing 1`] = `
       <WithStyles(ForwardRef(Typography))
         variant="h5"
       >
-        I'm a Full-Stack developer with professional experience working with PHP, Laravel, JavaScript, Node.js, SQL, React and Go. Take a look at my work or get in touch!
+        description
       </WithStyles(ForwardRef(Typography))>
     </WithStyles(ForwardRef(Grid))>
     <WithStyles(ForwardRef(Grid))
@@ -40,7 +40,7 @@ exports[`renders without crashing 1`] = `
       <WithStyles(ForwardRef(Typography))
         variant="button"
       >
-        dyarlen1@gmail.com
+        email
       </WithStyles(ForwardRef(Typography))>
     </WithStyles(ForwardRef(Grid))>
     <WithStyles(ForwardRef(Grid))
@@ -50,15 +50,15 @@ exports[`renders without crashing 1`] = `
       <WithStyles(ForwardRef(IconButton))
         aria-label="email"
         component="a"
-        href="mailto:dyarlen1@gmail.com"
+        href="mailto:email"
       >
         <MailIcon />
       </WithStyles(ForwardRef(IconButton))>
       <WithStyles(ForwardRef(IconButton))
-        aria-label="github"
+        aria-label="socialMediaName"
         component="a"
-        href="https://github.com/dyarleniber"
-        key="github"
+        href="socialMediaUrl"
+        key="socialMediaName"
         target="_blank"
       >
         <FontAwesomeIcon
@@ -69,103 +69,7 @@ exports[`renders without crashing 1`] = `
           icon={
             Array [
               "fab",
-              "github",
-            ]
-          }
-          inverse={false}
-          listItem={false}
-          mask={null}
-          pull={null}
-          pulse={false}
-          rotation={null}
-          size={null}
-          spin={false}
-          swapOpacity={false}
-          symbol={false}
-          title=""
-          transform={null}
-        />
-      </WithStyles(ForwardRef(IconButton))>
-      <WithStyles(ForwardRef(IconButton))
-        aria-label="linkedin"
-        component="a"
-        href="https://ie.linkedin.com/in/dyarleniber"
-        key="linkedin"
-        target="_blank"
-      >
-        <FontAwesomeIcon
-          border={false}
-          className=""
-          fixedWidth={false}
-          flip={null}
-          icon={
-            Array [
-              "fab",
-              "linkedin",
-            ]
-          }
-          inverse={false}
-          listItem={false}
-          mask={null}
-          pull={null}
-          pulse={false}
-          rotation={null}
-          size={null}
-          spin={false}
-          swapOpacity={false}
-          symbol={false}
-          title=""
-          transform={null}
-        />
-      </WithStyles(ForwardRef(IconButton))>
-      <WithStyles(ForwardRef(IconButton))
-        aria-label="instagram"
-        component="a"
-        href="https://www.instagram.com/dyarleniber/"
-        key="instagram"
-        target="_blank"
-      >
-        <FontAwesomeIcon
-          border={false}
-          className=""
-          fixedWidth={false}
-          flip={null}
-          icon={
-            Array [
-              "fab",
-              "instagram",
-            ]
-          }
-          inverse={false}
-          listItem={false}
-          mask={null}
-          pull={null}
-          pulse={false}
-          rotation={null}
-          size={null}
-          spin={false}
-          swapOpacity={false}
-          symbol={false}
-          title=""
-          transform={null}
-        />
-      </WithStyles(ForwardRef(IconButton))>
-      <WithStyles(ForwardRef(IconButton))
-        aria-label="dev"
-        component="a"
-        href="https://dev.to/dyarleniber"
-        key="dev"
-        target="_blank"
-      >
-        <FontAwesomeIcon
-          border={false}
-          className=""
-          fixedWidth={false}
-          flip={null}
-          icon={
-            Array [
-              "fab",
-              "dev",
+              "socialMediaName",
             ]
           }
           inverse={false}

@@ -3,7 +3,9 @@ import { shallow } from "enzyme";
 
 import Routes from "../Routes";
 
-it("renders without crashing", () => {
-  const wrapper = shallow(<Routes />);
-  expect(wrapper).toMatchSnapshot();
+describe("Routes component", () => {
+  it("should render without crashing", () => {
+    const wrapper = shallow(<Routes />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });

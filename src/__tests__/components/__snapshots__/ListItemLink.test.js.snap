@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing 1`] = `
+exports[`ListItemLink component should render without crashing 1`] = `
 <MemoryRouter
   initialEntries={
     Array [
@@ -45,27 +45,6 @@ exports[`renders without crashing 1`] = `
   >
     <ListItemLink
       handleClick={[MockFunction]}
-      icon={
-        <FontAwesomeIcon
-          border={false}
-          className=""
-          fixedWidth={false}
-          flip={null}
-          icon="home"
-          inverse={false}
-          listItem={false}
-          mask={null}
-          pull={null}
-          pulse={false}
-          rotation={null}
-          size={null}
-          spin={false}
-          swapOpacity={false}
-          symbol={false}
-          title=""
-          transform={null}
-        />
-      }
       primary="Home"
       to="/"
     >
@@ -304,7 +283,7 @@ exports[`renders without crashing 1`] = `
 </MemoryRouter>
 `;
 
-exports[`renders without crashing 2`] = `
+exports[`ListItemLink component should render without crashing 2`] = `
 <MemoryRouter
   initialEntries={
     Array [

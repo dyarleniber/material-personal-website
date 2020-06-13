@@ -1,22 +1,26 @@
 import React from "react";
 import { shallow } from "enzyme";
 
+import * as data from "../../config/dataApi";
 import MenuBar from "../../components/MenuBar";
 
 let wrapper;
 
-jest.mock("react-router-dom", () => {
-  const originalModule = jest.requireActual("react-router-dom");
-
-  return {
-    ...originalModule,
-    useLocation: () => ({
-      pathname: "/",
-    }),
-  };
-});
+const originalMenuItems = data.menuItems;
 
 beforeAll(() => {
+  delete data.menuItems;
+  data.menuItems = [
+    {
+      to: "/",
+      primary: "Home",
+    },
+    {
+      to: "/portfolio",
+      primary: "Portfolio",
+    },
+  ];
+
   wrapper = shallow(
     <MenuBar>
       <div className="unique" />
@@ -24,23 +28,28 @@ beforeAll(() => {
   );
 });
 
-it("renders without crashing", () => {
-  expect(wrapper).toMatchSnapshot();
+afterAll(() => {
+  data.menuItems = originalMenuItems;
 });
 
-it("toggles drawer", () => {
-  expect(wrapper.find("#menubar-drawer").prop("open")).toBeFalsy();
+describe("MenuBar component", () => {
+  it("should render without crashing", () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 
-  expect(wrapper.find("#open-menubar-button").prop("onClick")).toEqual(
-    expect.any(Function)
-  );
-  expect(wrapper.find("#close-menubar-button").prop("onClick")).toEqual(
-    expect.any(Function)
-  );
+  it("should toggle drawer", () => {
+    expect(wrapper.find("#menubar-drawer").prop("open")).toBeFalsy();
 
-  wrapper.find("#open-menubar-button").props().onClick();
-  expect(wrapper.find("#menubar-drawer").prop("open")).toBeTruthy();
+    expect(wrapper.find("#open-menubar-button").prop("onClick")).toEqual(
+      expect.any(Function)
+    );
+    wrapper.find("#open-menubar-button").props().onClick();
+    expect(wrapper.find("#menubar-drawer").prop("open")).toBeTruthy();
 
-  wrapper.find("#close-menubar-button").props().onClick();
-  expect(wrapper.find("#menubar-drawer").prop("open")).toBeFalsy();
+    expect(wrapper.find("#close-menubar-button").prop("onClick")).toEqual(
+      expect.any(Function)
+    );
+    wrapper.find("#close-menubar-button").props().onClick();
+    expect(wrapper.find("#menubar-drawer").prop("open")).toBeFalsy();
+  });
 });

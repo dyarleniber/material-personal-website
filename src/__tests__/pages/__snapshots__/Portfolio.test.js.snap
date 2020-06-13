@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing 1`] = `
+exports[`Portfolio page should render a skeleton card when loading 1`] = `
 <WithStyles(ForwardRef(Grid))
   container={true}
   spacing={4}
@@ -13,13 +13,13 @@ exports[`renders without crashing 1`] = `
       gutterBottom={true}
       variant="h2"
     >
-      Portfolio
+      portfolio title
     </WithStyles(ForwardRef(Typography))>
     <WithStyles(ForwardRef(Typography))
       gutterBottom={true}
       variant="body1"
     >
-      All my projects are covered by automated tests and deployed on platforms such as GitHub Pages or Netlify. For more details about the source code, automated tests, CI/CD workflow and technologies used, please visit the github page of each project.
+      portfolio description
     </WithStyles(ForwardRef(Typography))>
   </WithStyles(ForwardRef(Grid))>
   <WithStyles(ForwardRef(Grid))
@@ -58,122 +58,106 @@ exports[`renders without crashing 1`] = `
     >
       <WithStyles(ForwardRef(Grid))
         item={true}
-        key="201"
       >
-        <Cards
-          description="Habit tracker back-end system using Javascript, Node.js, Express, JWT, MongoDB, Mongoose, Nodemailer, Handlebars, Redis, Winston and Jest with 100% code coverage in tests."
-          github="https://github.com/dyarleniber/habit-tracker-back-end"
-          homepage={null}
-          id={201}
-          name="Habit tracker back-end"
-          technologies={
-            Array [
-              "Node.js",
-              "Express",
-              "JWT",
-              "MongoDB",
-              "Redis",
-              "Jest",
-            ]
-          }
-          type="BACK-END"
+        <WithStyles(ForwardRef(Skeleton))
+          height={350}
+          variant="rect"
+          width={300}
         />
       </WithStyles(ForwardRef(Grid))>
       <WithStyles(ForwardRef(Grid))
         item={true}
-        key="202"
       >
-        <Cards
-          description="Payment gateway API."
-          github="https://github.com/dyarleniber/php-payment-api"
-          homepage={null}
-          id={202}
-          name="Payment API"
-          technologies={
-            Array [
-              "PHP",
-            ]
-          }
-          type="BACK-END"
+        <WithStyles(ForwardRef(Skeleton))
+          height={350}
+          variant="rect"
+          width={300}
         />
       </WithStyles(ForwardRef(Grid))>
       <WithStyles(ForwardRef(Grid))
         item={true}
-        key="203"
       >
-        <Cards
-          description="Final project for Udemy course."
-          github="https://github.com/dyarleniber/smart-brain-api"
-          homepage={null}
-          id={203}
-          name="Smart brain API"
-          technologies={
-            Array [
-              "Node.js",
-              "Express",
-              "JWT",
-              "Redis",
-            ]
-          }
-          type="BACK-END"
+        <WithStyles(ForwardRef(Skeleton))
+          height={350}
+          variant="rect"
+          width={300}
         />
       </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Grid))>
+`;
+
+exports[`Portfolio page should render without crashing 1`] = `
+<WithStyles(ForwardRef(Grid))
+  container={true}
+  spacing={4}
+>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    xs={12}
+  >
+    <WithStyles(ForwardRef(Typography))
+      gutterBottom={true}
+      variant="h2"
+    >
+      portfolio title
+    </WithStyles(ForwardRef(Typography))>
+    <WithStyles(ForwardRef(Typography))
+      gutterBottom={true}
+      variant="body1"
+    >
+      portfolio description
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    xs={12}
+  >
+    <WithStyles(ForwardRef(Tabs))
+      aria-label="porfolio filter"
+      centered={true}
+      id="tab-filter"
+      onChange={[Function]}
+      value="ALL"
+    >
+      <WithStyles(ForwardRef(Tab))
+        label="ALL"
+        value="ALL"
+      />
+      <WithStyles(ForwardRef(Tab))
+        label="FRONT-END"
+        value="FRONTEND"
+      />
+      <WithStyles(ForwardRef(Tab))
+        label="BACK-END"
+        value="BACKEND"
+      />
+    </WithStyles(ForwardRef(Tabs))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    xs={12}
+  >
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      justify="center"
+      spacing={4}
+    >
       <WithStyles(ForwardRef(Grid))
         item={true}
-        key="204"
+        key="1"
       >
         <Cards
-          description="PHP and MySQL environment with Docker and Docker Compose."
-          github="https://github.com/dyarleniber/docker-php"
-          homepage={null}
-          id={204}
-          name="PHP Docker environment"
+          description="Portfolio front-end 1 item description"
+          github="githubexample"
+          homepage="homepageexample"
+          id={1}
+          name="Portfolio front-end 1 item test"
           technologies={
             Array [
-              "PHP",
-              "MySQL",
-              "Docker",
-            ]
-          }
-          type="BACK-END"
-        />
-      </WithStyles(ForwardRef(Grid))>
-      <WithStyles(ForwardRef(Grid))
-        item={true}
-        key="205"
-      >
-        <Cards
-          description="This project was developed applying the Chain of Responsibility Pattern and the Builder Pattern to develop FizzBuzz."
-          github="https://github.com/dyarleniber/awesome-fizzbuzz"
-          homepage={null}
-          id={205}
-          name="Awesome Fizzbuzz"
-          technologies={
-            Array [
-              "PHP",
-              "Docker",
-            ]
-          }
-          type="BACK-END"
-        />
-      </WithStyles(ForwardRef(Grid))>
-      <WithStyles(ForwardRef(Grid))
-        item={true}
-        key="101"
-      >
-        <Cards
-          description="💻 Personal website using Javascript, React, Hooks, Material-UI and Jest."
-          github="https://github.com/dyarleniber/personal-website"
-          homepage="https://dyarleniber.com"
-          id={101}
-          name="Personal website"
-          technologies={
-            Array [
-              "Javascript",
-              "React",
-              "Hooks",
-              "Material-UI",
-              "Jest",
+              "tech1",
+              "tech2",
             ]
           }
           type="FRONT-END"
@@ -181,86 +165,49 @@ exports[`renders without crashing 1`] = `
       </WithStyles(ForwardRef(Grid))>
       <WithStyles(ForwardRef(Grid))
         item={true}
-        key="102"
+        key="2"
       >
         <Cards
-          description="Application for search New York Times movie reviews and get movie critics using Javascript, React, Redux, React hooks, redux-saga and styled-components."
-          github="https://github.com/dyarleniber/nyt-movie-reviews"
+          description="Portfolio front-end 2 item description"
+          github={null}
           homepage={null}
-          id={102}
-          name="New York Times movie reviews"
-          technologies={
-            Array [
-              "React",
-              "Redux",
-              "Hooks",
-              "redux-saga",
-              "styled-components",
-            ]
-          }
+          id={2}
+          name="Portfolio front-end 2 item test"
+          technologies={Array []}
           type="FRONT-END"
         />
       </WithStyles(ForwardRef(Grid))>
       <WithStyles(ForwardRef(Grid))
         item={true}
-        key="103"
+        key="3"
       >
         <Cards
-          description="Habit tracker front-end system using Javascript, React, Redux, React hooks, redux-saga and styled-components."
-          github="https://github.com/dyarleniber/habit-tracker-front-end"
-          homepage={null}
-          id={103}
-          name="Habit tracker front-end"
+          description="Portfolio back-end 3 item description"
+          github="githubexample"
+          homepage="homepageexample"
+          id={3}
+          name="Portfolio back-end 3 item test"
           technologies={
             Array [
-              "React",
-              "Redux",
-              "Hooks",
-              "redux-saga",
-              "styled-components",
+              "tech1",
+              "tech2",
             ]
           }
-          type="FRONT-END"
+          type="BACK-END"
         />
       </WithStyles(ForwardRef(Grid))>
       <WithStyles(ForwardRef(Grid))
         item={true}
-        key="104"
+        key="4"
       >
         <Cards
-          description="Udemy Final Project."
-          github="https://github.com/dyarleniber/smart-brain"
+          description="Portfolio back-end 4 item description"
+          github={null}
           homepage={null}
-          id={104}
-          name="Smart brain"
-          technologies={
-            Array [
-              "React",
-              "Redux",
-            ]
-          }
-          type="FRONT-END"
-        />
-      </WithStyles(ForwardRef(Grid))>
-      <WithStyles(ForwardRef(Grid))
-        item={true}
-        key="105"
-      >
-        <Cards
-          description="Simple To-do list with React, Redux and Hooks."
-          github="https://github.com/dyarleniber/react-to-do-list"
-          homepage={null}
-          id={105}
-          name="To-do list"
-          technologies={
-            Array [
-              "React",
-              "Redux",
-              "Hooks",
-              "Bootstrap",
-            ]
-          }
-          type="FRONT-END"
+          id={4}
+          name="Portfolio back-end 4 item test"
+          technologies={Array []}
+          type="BACK-END"
         />
       </WithStyles(ForwardRef(Grid))>
     </WithStyles(ForwardRef(Grid))>
