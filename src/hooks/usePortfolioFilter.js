@@ -24,15 +24,17 @@ const handleOrder = (items) =>
   });
 
 function usePortfolioFilter() {
+  const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState(filters.ALL_FILTER);
   const [filteredPortfolio, setFilteredPortfolio] = useState([]);
 
   useEffect(() => {
     setFilteredPortfolio(handleFilter(portfolio, filter));
     setFilteredPortfolio((prevState) => handleOrder(prevState));
+    setLoading(false);
   }, [filter]);
 
-  return { filteredPortfolio, filter, setFilter };
+  return { filteredPortfolio, filter, setFilter, loading };
 }
 
 export default usePortfolioFilter;
