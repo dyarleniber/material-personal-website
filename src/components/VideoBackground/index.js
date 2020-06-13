@@ -11,16 +11,18 @@ function VideoBackground({ children }) {
 
   return (
     <>
-      <video
-        playsInline
-        autoPlay
-        loop
-        muted
-        poster={videPoster}
-        className={classes.video}
-      >
-        <source src={videoSource} type="video/mp4" />
-      </video>
+      {videPoster && videoSource && (
+        <video
+          playsInline
+          autoPlay
+          loop
+          muted
+          poster={videPoster}
+          className={classes.video}
+        >
+          <source src={videoSource} type="video/mp4" />
+        </video>
+      )}
       <div className={classes.overlay} />
       <div className={classes.content}>{children}</div>
     </>

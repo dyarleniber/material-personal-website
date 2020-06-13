@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`VideoBackground component should render without crashing 1`] = `
+exports[`VideoBackground component should render background video 1`] = `
 <Fragment>
   <video
     autoPlay={true}
@@ -15,6 +15,21 @@ exports[`VideoBackground component should render without crashing 1`] = `
       type="video/mp4"
     />
   </video>
+  <div
+    className="makeStyles-overlay-2"
+  />
+  <div
+    className="makeStyles-content-3"
+  >
+    <div
+      className="unique"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`VideoBackground component should render without background video 1`] = `
+<Fragment>
   <div
     className="makeStyles-overlay-2"
   />

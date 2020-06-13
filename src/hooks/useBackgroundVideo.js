@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect } from "react";
+import { useState, useEffect } from "react";
 
 import videPoster240 from "../assets/images/code240.jpg";
 import videPoster320 from "../assets/images/code320.jpg";
@@ -10,10 +10,10 @@ import videoSource480 from "../assets/videos/code480.mp4";
 import videoSource720 from "../assets/videos/code720.mp4";
 
 function useBackgroundVideo() {
-  const [videPoster, setVidePoster] = useState(videPoster240);
-  const [videoSource, setVideoSource] = useState(videoSource240);
+  const [videPoster, setVidePoster] = useState();
+  const [videoSource, setVideoSource] = useState();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const { innerWidth: width } = window;
 
     if (width > 1280) {
