@@ -164,7 +164,7 @@ exports[`renders without crashing 1`] = `
         <Cards
           description="💻 Personal website using Javascript, React, Hooks, Material-UI and Jest."
           github="https://github.com/dyarleniber/personal-website"
-          homepage="https://www.dyarleniber.com"
+          homepage="https://dyarleniber.com"
           id={101}
           name="Personal website"
           technologies={

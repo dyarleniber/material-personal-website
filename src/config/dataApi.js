@@ -53,7 +53,7 @@ const frontEndPortfolio = [
       "💻 Personal website using Javascript, React, Hooks, Material-UI and Jest.",
     type: portfolioTypes.FRONTEND_TYPE,
     technologies: ["Javascript", "React", "Hooks", "Material-UI", "Jest"],
-    homepage: "https://www.dyarleniber.com",
+    homepage: "https://dyarleniber.com",
     github: "https://github.com/dyarleniber/personal-website",
   },
   {

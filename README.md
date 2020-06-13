@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="https://dyarleniber.github.io/personal-website/">Live Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://dyarleniber.com">Live Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#gear-configuration">Configuration</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>
 </p>
@@ -61,4 +61,4 @@ This project is under the MIT license. See the [LICENSE](https://github.com/dyar
 
 ---
 
-Made with ♥ by Dyarlen Iber :wave: [Get in touch!](https://dyarleniber.github.io/personal-website/)
+Made with ♥ by Dyarlen Iber :wave: [Get in touch!](https://dyarleniber.com)
