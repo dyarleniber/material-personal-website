@@ -5,7 +5,7 @@ export const personalData = {
   greeting: "Hi, I'm",
   name: "Dyarlen Iber",
   description:
-    "I'm a Full-Stack Developer with experience in the following technologies: PHP, Laravel, JavaScript, Node.js, React, MySQL, MongoDB and Go.",
+    "I'm a Full-Stack developer with professional experience working with PHP, Laravel, JavaScript, Node.js, SQL, React and Go. Take a look at my work or get in touch!",
   email: "dyarlen1@gmail.com",
   profilePicture: defaultprofilepic,
   socialMedias: [
@@ -48,6 +48,16 @@ export const portfolioData = {
 const frontEndPortfolio = [
   {
     id: 101,
+    name: "Personal website",
+    description:
+      "💻 Personal website using Javascript, React, Hooks, Material-UI and Jest.",
+    type: portfolioTypes.FRONTEND_TYPE,
+    technologies: ["Javascript", "React", "Hooks", "Material-UI", "Jest"],
+    homepage: "https://www.dyarleniber.com",
+    github: "https://github.com/dyarleniber/personal-website",
+  },
+  {
+    id: 102,
     name: "New York Times movie reviews",
     description:
       "Application for search New York Times movie reviews and get movie critics using Javascript, React, Redux, React hooks, redux-saga and styled-components.",
@@ -63,7 +73,7 @@ const frontEndPortfolio = [
     github: "https://github.com/dyarleniber/nyt-movie-reviews",
   },
   {
-    id: 102,
+    id: 103,
     name: "Habit tracker front-end",
     description:
       "Habit tracker front-end system using Javascript, React, Redux, React hooks, redux-saga and styled-components.",
@@ -79,7 +89,7 @@ const frontEndPortfolio = [
     github: "https://github.com/dyarleniber/habit-tracker-front-end",
   },
   {
-    id: 103,
+    id: 104,
     name: "Smart brain",
     description: "Udemy Final Project.",
     type: portfolioTypes.FRONTEND_TYPE,
@@ -88,23 +98,13 @@ const frontEndPortfolio = [
     github: "https://github.com/dyarleniber/smart-brain",
   },
   {
-    id: 104,
+    id: 105,
     name: "To-do list",
     description: "Simple To-do list with React, Redux and Hooks.",
     type: portfolioTypes.FRONTEND_TYPE,
     technologies: ["React", "Redux", "Hooks", "Bootstrap"],
     homepage: null,
     github: "https://github.com/dyarleniber/react-to-do-list",
-  },
-  {
-    id: 105,
-    name: "Personal website",
-    description:
-      "💻 Personal website using Javascript, React, Hooks, Material-UI and Jest.",
-    type: portfolioTypes.FRONTEND_TYPE,
-    technologies: ["Javascript", "React", "Hooks", "Material-UI", "Jest"],
-    homepage: "http://dyarleniber.com",
-    github: "https://github.com/dyarleniber/personal-website",
   },
 ];
 
