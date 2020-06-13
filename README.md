@@ -55,6 +55,8 @@ $ npm start
 $ npm test
 ```
 
+> All data, such as personal data and portfolio, must be changed in the `src/config/dataApi.js` file.
+
 ## :memo: License
 
 This project is under the MIT license. See the [LICENSE](https://github.com/dyarleniber/personal-website/blob/master/LICENSE) for more information.
