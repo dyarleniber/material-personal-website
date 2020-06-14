@@ -49,6 +49,7 @@ function PersonalData() {
               aria-label={socialMedia.name}
               component="a"
               target="_blank"
+              rel="noopener noreferrer"
               href={socialMedia.url}
             >
               <FontAwesomeIcon icon={["fab", socialMedia.name]} />

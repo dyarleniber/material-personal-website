@@ -85,6 +85,7 @@ exports[`Cards component should render without crashing 1`] = `
   <WithStyles(ForwardRef(CardActions))>
     <WithStyles(ForwardRef(Button))
       href="homepage"
+      rel="noopener noreferrer"
       size="small"
       target="_blank"
     >
@@ -92,6 +93,7 @@ exports[`Cards component should render without crashing 1`] = `
     </WithStyles(ForwardRef(Button))>
     <WithStyles(ForwardRef(Button))
       href="github"
+      rel="noopener noreferrer"
       size="small"
       target="_blank"
     >
@@ -186,6 +188,7 @@ exports[`Cards component should render without crashing 2`] = `
   <WithStyles(ForwardRef(CardActions))>
     <WithStyles(ForwardRef(Button))
       href="homepage"
+      rel="noopener noreferrer"
       size="small"
       target="_blank"
     >
@@ -193,6 +196,7 @@ exports[`Cards component should render without crashing 2`] = `
     </WithStyles(ForwardRef(Button))>
     <WithStyles(ForwardRef(Button))
       href="github"
+      rel="noopener noreferrer"
       size="small"
       target="_blank"
     >

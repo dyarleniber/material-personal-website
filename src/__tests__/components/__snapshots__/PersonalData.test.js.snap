@@ -89,6 +89,7 @@ exports[`PersonalData component should render without crashing 1`] = `
         component="a"
         href="socialMediaUrl"
         key="socialMediaName"
+        rel="noopener noreferrer"
         target="_blank"
       >
         <FontAwesomeIcon

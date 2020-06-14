@@ -55,12 +55,22 @@ function Cards({ name, description, type, technologies, homepage, github }) {
       </CardActions>
       <CardActions>
         {homepage && (
-          <Button size="small" target="_blank" href={homepage}>
+          <Button
+            size="small"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={homepage}
+          >
             Homepage
           </Button>
         )}
         {github && (
-          <Button size="small" target="_blank" href={github}>
+          <Button
+            size="small"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={github}
+          >
             GitHub
           </Button>
         )}
