@@ -30,7 +30,7 @@ The code base is 100% covered by automated tests with [Jest](https://jestjs.io) 
 
 The website is hosted on [GitHub Pages](https://pages.github.com). And a CI/CD workflow created on [GitHub Actions](https://github.com/features/actions) is responsible for automatically test the source code, generate a coverage report and upload it on [Codecov](https://codecov.io), build and deploy the project on [GitHub Pages](https://pages.github.com). All these jobs are activated by a push or pull request event on master branch.
 
-![live-video](https://user-images.githubusercontent.com/40317398/84079796-0ed11b00-a9d3-11ea-875d-6ec0571fa77e.gif)
+![preview-video](https://user-images.githubusercontent.com/40317398/84584841-23614900-ae01-11ea-8924-e8be306ac869.gif)
 
 ## :gear: Configuration
 
