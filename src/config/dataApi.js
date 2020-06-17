@@ -50,9 +50,9 @@ const frontEndPortfolio = [
     id: 101,
     name: "Personal website",
     description:
-      "💻 Personal website using Javascript, React, Hooks, Material-UI and Jest.",
+      "💻 Personal website using JavaScript, React, Hooks, Material-UI and Jest.",
     type: portfolioTypes.FRONTEND_TYPE,
-    technologies: ["Javascript", "React", "Hooks", "Material-UI", "Jest"],
+    technologies: ["JavaScript", "React", "Hooks", "Material-UI", "Jest"],
     homepage: "https://dyarleniber.com",
     github: "https://github.com/dyarleniber/personal-website",
   },
@@ -99,11 +99,19 @@ const frontEndPortfolio = [
   },
   {
     id: 105,
-    name: "To-do list",
-    description: "Simple To-do list with React, Redux and Hooks.",
+    name: "React to-do list",
+    description:
+      "📋 to-do list using JavaScript, React, Redux, Hooks, Bootstrap and Jest.",
     type: portfolioTypes.FRONTEND_TYPE,
-    technologies: ["React", "Redux", "Hooks", "Bootstrap"],
-    homepage: null,
+    technologies: [
+      "JavaScript",
+      "React",
+      "Redux",
+      "Hooks",
+      "Bootstrap",
+      "Jest",
+    ],
+    homepage: "https://dyarleniber.github.io/react-to-do-list/",
     github: "https://github.com/dyarleniber/react-to-do-list",
   },
 ];
