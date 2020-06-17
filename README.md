@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  :computer: Personal website using Javascript, React, Hooks, Material-UI and Jest.
+  :computer: Personal website using JavaScript, React, Hooks, Material-UI and Jest.
 </p>
 
 <p align="center">
@@ -50,10 +50,15 @@ $ npm install
 
 # Run the app in the development mode (open http://localhost:3000 to view it in the browser)
 $ npm start
+```
 
-# Run the tests (in the interactive watch mode)
+To run the tests (in the interactive watch mode), run the following command:
+
+```bash
 $ npm test
 ```
+
+For more information about the available scripts, access the [Create React App documentation](https://create-react-app.dev/docs/available-scripts/).
 
 > All data, such as personal data and portfolio, must be changed in the `src/config/dataApi.js` file.
 
