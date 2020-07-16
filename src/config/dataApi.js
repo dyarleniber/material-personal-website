@@ -60,16 +60,18 @@ const frontEndPortfolio = [
     id: 102,
     name: "New York Times movie reviews",
     description:
-      "Application for search New York Times movie reviews and get movie critics using Javascript, React, Redux, React hooks, redux-saga and styled-components.",
+      "🎥 Application for search New York Times movie reviews and get movie critics using JavaScript, React, Redux, Hooks, redux-saga, styled-components and Jest.",
     type: portfolioTypes.FRONTEND_TYPE,
     technologies: [
+      "JavaScript",
       "React",
       "Redux",
       "Hooks",
       "redux-saga",
       "styled-components",
+      "Jest",
     ],
-    homepage: null,
+    homepage: "https://dyarleniber.github.io/nyt-movie-reviews/",
     github: "https://github.com/dyarleniber/nyt-movie-reviews",
   },
   {
@@ -90,15 +92,6 @@ const frontEndPortfolio = [
   },
   {
     id: 104,
-    name: "Smart brain",
-    description: "Udemy Final Project.",
-    type: portfolioTypes.FRONTEND_TYPE,
-    technologies: ["React", "Redux"],
-    homepage: null,
-    github: "https://github.com/dyarleniber/smart-brain",
-  },
-  {
-    id: 105,
     name: "React to-do list",
     description:
       "📋 to-do list using JavaScript, React, Redux, Hooks, Bootstrap and Jest.",
@@ -138,15 +131,6 @@ const backEndPortfolio = [
   },
   {
     id: 203,
-    name: "Smart brain API",
-    description: "Final project for Udemy course.",
-    type: portfolioTypes.BACKEND_TYPE,
-    technologies: ["Node.js", "Express", "JWT", "Redis"],
-    homepage: null,
-    github: "https://github.com/dyarleniber/smart-brain-api",
-  },
-  {
-    id: 204,
     name: "PHP Docker environment",
     description: "PHP and MySQL environment with Docker and Docker Compose.",
     type: portfolioTypes.BACKEND_TYPE,
@@ -155,7 +139,7 @@ const backEndPortfolio = [
     github: "https://github.com/dyarleniber/docker-php",
   },
   {
-    id: 205,
+    id: 204,
     name: "Awesome Fizzbuzz",
     description:
       "This project was developed applying the Chain of Responsibility Pattern and the Builder Pattern to develop FizzBuzz.",
