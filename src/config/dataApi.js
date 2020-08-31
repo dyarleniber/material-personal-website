@@ -163,7 +163,7 @@ const backEndPortfolio = [
     description:
       "📋 to-do list with authentication using Laravel 7 framework applying feature tests.",
     type: portfolioTypes.BACKEND_TYPE,
-    technologies: ["PHP", "Laravel", "MySQL", "PHPUnit", "Docker" "Docker Compose"],
+    technologies: ["PHP", "Laravel", "MySQL", "PHPUnit", "Docker", "Docker Compose"],
     homepage: null,
     github: "https://github.com/dyarleniber/laravel7-to-do-list",
   },
