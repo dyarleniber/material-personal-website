@@ -74,22 +74,22 @@ const frontEndPortfolio = [
     homepage: "https://dyarleniber.github.io/nyt-movie-reviews/",
     github: "https://github.com/dyarleniber/nyt-movie-reviews",
   },
-  {
-    id: 103,
-    name: "Habit tracker front-end",
-    description:
-      "Habit tracker front-end system using Javascript, React, Redux, React hooks, redux-saga and styled-components.",
-    type: portfolioTypes.FRONTEND_TYPE,
-    technologies: [
-      "React",
-      "Redux",
-      "Hooks",
-      "redux-saga",
-      "styled-components",
-    ],
-    homepage: null,
-    github: "https://github.com/dyarleniber/habit-tracker-front-end",
-  },
+  // {
+  //   id: 103,
+  //   name: "Habit tracker front-end",
+  //   description:
+  //     "Habit tracker front-end system using Javascript, React, Redux, React hooks, redux-saga and styled-components.",
+  //   type: portfolioTypes.FRONTEND_TYPE,
+  //   technologies: [
+  //     "React",
+  //     "Redux",
+  //     "Hooks",
+  //     "redux-saga",
+  //     "styled-components",
+  //   ],
+  //   homepage: null,
+  //   github: "https://github.com/dyarleniber/habit-tracker-front-end",
+  // },
   {
     id: 104,
     name: "React to-do list",
@@ -110,25 +110,25 @@ const frontEndPortfolio = [
 ];
 
 const backEndPortfolio = [
-  {
-    id: 201,
-    name: "Habit tracker back-end",
-    description:
-      "Habit tracker back-end system using Javascript, Node.js, Express, JWT, MongoDB, Mongoose, Nodemailer, Handlebars, Redis, Winston and Jest with 100% code coverage in tests.",
-    type: portfolioTypes.BACKEND_TYPE,
-    technologies: ["Node.js", "Express", "JWT", "MongoDB", "Redis", "Jest"],
-    homepage: null,
-    github: "https://github.com/dyarleniber/habit-tracker-back-end",
-  },
-  {
-    id: 202,
-    name: "Payment API",
-    description: "Payment gateway API.",
-    type: portfolioTypes.BACKEND_TYPE,
-    technologies: ["PHP"],
-    homepage: null,
-    github: "https://github.com/dyarleniber/php-payment-api",
-  },
+  // {
+  //   id: 201,
+  //   name: "Habit tracker back-end",
+  //   description:
+  //     "Habit tracker back-end system using Javascript, Node.js, Express, JWT, MongoDB, Mongoose, Nodemailer, Handlebars, Redis, Winston and Jest with 100% code coverage in tests.",
+  //   type: portfolioTypes.BACKEND_TYPE,
+  //   technologies: ["Node.js", "Express", "JWT", "MongoDB", "Redis", "Jest"],
+  //   homepage: null,
+  //   github: "https://github.com/dyarleniber/habit-tracker-back-end",
+  // },
+  // {
+  //   id: 202,
+  //   name: "Payment API",
+  //   description: "Payment gateway API.",
+  //   type: portfolioTypes.BACKEND_TYPE,
+  //   technologies: ["PHP"],
+  //   homepage: null,
+  //   github: "https://github.com/dyarleniber/php-payment-api",
+  // },
   {
     id: 203,
     name: "Laravel Docker environment",
@@ -138,28 +138,28 @@ const backEndPortfolio = [
     homepage: null,
     github: "https://github.com/dyarleniber/laravel-docker",
   },
-  {
-    id: 204,
-    name: "PHP Docker environment",
-    description: "PHP and MySQL environment with Docker and Docker Compose.",
-    type: portfolioTypes.BACKEND_TYPE,
-    technologies: ["PHP", "MySQL", "Docker" "Docker Compose"],
-    homepage: null,
-    github: "https://github.com/dyarleniber/docker-php",
-  },
-  {
-    id: 205,
-    name: "Awesome Fizzbuzz",
-    description:
-      "This project was developed applying the Chain of Responsibility Pattern and the Builder Pattern to develop FizzBuzz.",
-    type: portfolioTypes.BACKEND_TYPE,
-    technologies: ["PHP", "Docker"],
-    homepage: null,
-    github: "https://github.com/dyarleniber/awesome-fizzbuzz",
-  },
+  // {
+  //   id: 204,
+  //   name: "PHP Docker environment",
+  //   description: "PHP and MySQL environment with Docker and Docker Compose.",
+  //   type: portfolioTypes.BACKEND_TYPE,
+  //   technologies: ["PHP", "MySQL", "Docker" "Docker Compose"],
+  //   homepage: null,
+  //   github: "https://github.com/dyarleniber/docker-php",
+  // },
+  // {
+  //   id: 205,
+  //   name: "Awesome Fizzbuzz",
+  //   description:
+  //     "This project was developed applying the Chain of Responsibility Pattern and the Builder Pattern to develop FizzBuzz.",
+  //   type: portfolioTypes.BACKEND_TYPE,
+  //   technologies: ["PHP", "Docker"],
+  //   homepage: null,
+  //   github: "https://github.com/dyarleniber/awesome-fizzbuzz",
+  // },
   {
     id: 206,
-    name: "Laravel to-do list",
+    name: "Laravel 7 to-do list",
     description:
       "📋 to-do list with authentication using Laravel 7 framework applying feature tests.",
     type: portfolioTypes.BACKEND_TYPE,
