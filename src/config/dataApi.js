@@ -131,15 +131,24 @@ const backEndPortfolio = [
   },
   {
     id: 203,
+    name: "Laravel Docker environment",
+    description: "PHP development environment with PHP-FPM, Nginx and MySQL to run Laravel applications using Docker and Docker Compose.",
+    type: portfolioTypes.BACKEND_TYPE,
+    technologies: ["PHP", "PHP-FPM", "Nginx", "MySQL", "Laravel", "Docker", "Docker Compose"],
+    homepage: null,
+    github: "https://github.com/dyarleniber/laravel-docker",
+  },
+  {
+    id: 204,
     name: "PHP Docker environment",
     description: "PHP and MySQL environment with Docker and Docker Compose.",
     type: portfolioTypes.BACKEND_TYPE,
-    technologies: ["PHP", "MySQL", "Docker"],
+    technologies: ["PHP", "MySQL", "Docker" "Docker Compose"],
     homepage: null,
     github: "https://github.com/dyarleniber/docker-php",
   },
   {
-    id: 204,
+    id: 205,
     name: "Awesome Fizzbuzz",
     description:
       "This project was developed applying the Chain of Responsibility Pattern and the Builder Pattern to develop FizzBuzz.",
@@ -147,6 +156,16 @@ const backEndPortfolio = [
     technologies: ["PHP", "Docker"],
     homepage: null,
     github: "https://github.com/dyarleniber/awesome-fizzbuzz",
+  },
+  {
+    id: 206,
+    name: "Laravel to-do list",
+    description:
+      "📋 to-do list with authentication using Laravel 7 framework applying feature tests.",
+    type: portfolioTypes.BACKEND_TYPE,
+    technologies: ["PHP", "Laravel", "MySQL", "PHPUnit", "Docker" "Docker Compose"],
+    homepage: null,
+    github: "https://github.com/dyarleniber/laravel7-to-do-list",
   },
 ];
 
