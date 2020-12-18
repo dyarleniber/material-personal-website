@@ -1,25 +1,25 @@
 <h1 align="center">
-  Personal website
+  Material-UI Personal website
 </h1>
 
 <p align="center">
-  :computer: Personal website using JavaScript, React, Hooks, Material-UI and Jest.
+  :computer: Personal website using JavaScript, React, Hooks, Material-UI, Jest and Enzyme.
 </p>
 
 <p align="center">
-  <a href="https://github.com/dyarleniber/personal-website/actions?query=workflow%3ACI%2FCD">
-    <img alt="CI/CD" src="https://github.com/dyarleniber/personal-website/workflows/CI/CD/badge.svg">
+  <a href="https://github.com/dyarleniber/material-personal-website/actions?query=workflow%3ACI%2FCD">
+    <img alt="CI/CD" src="https://github.com/dyarleniber/material-personal-website/workflows/CI/CD/badge.svg">
   </a>
-  <a href="https://codecov.io/gh/dyarleniber/personal-website">
-    <img alt="Coverage" src="https://img.shields.io/codecov/c/github/dyarleniber/personal-website">
+  <a href="https://codecov.io/gh/dyarleniber/material-personal-website">
+    <img alt="Coverage" src="https://img.shields.io/codecov/c/github/dyarleniber/material-personal-website">
   </a>
-  <a href="https://github.com/dyarleniber/personal-website/blob/master/LICENSE">
-    <img alt="License" src="https://img.shields.io/github/license/dyarleniber/personal-website">
+  <a href="https://github.com/dyarleniber/material-personal-website/blob/master/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/dyarleniber/material-personal-website">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://dyarleniber.com">Live Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://dyarleniber.github.io/material-personal-website/">Live Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#gear-configuration">Configuration</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>
 </p>
@@ -40,10 +40,10 @@ From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/dyarleniber/personal-website.git
+$ git clone https://github.com/dyarleniber/material-personal-website.git
 
 # Go into the repository folder
-$ cd personal-website
+$ cd material-personal-website
 
 # Install dependencies
 $ npm install
@@ -64,7 +64,7 @@ For more information about the available scripts, access the [Create React App d
 
 ## :memo: License
 
-This project is under the MIT license. See the [LICENSE](https://github.com/dyarleniber/personal-website/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/dyarleniber/material-personal-website/blob/master/LICENSE) for more information.
 
 ---
 
